@@ -1,18 +1,18 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="8/10/2020 7:37:45 PM"
+  DTS:CreationDate="8/27/2020 11:02:54 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-62UHNOD"
   DTS:CreatorName="DESKTOP-62UHNOD\owner"
-  DTS:DTSID="{E15D614B-0998-41E0-BB52-419C7904CDDC}"
+  DTS:DTSID="{B0B4E865-3D65-42E2-AA1C-EC9EABDCBF36}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.123"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="Eleni_Dulla_QuickenLoan"
   DTS:PackageType="5"
   DTS:VersionBuild="1"
-  DTS:VersionGUID="{0FD1A2FF-B513-484D-A148-E9353291A394}">
+  DTS:VersionGUID="{F5166892-7469-424A-8833-72CCAE698C13}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
