@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\QL_Eleni_Dulla_SSIS_Packages"
+    "\\QL_Eleni_Dulla_SSIS_Packages",
+    "\\QL_Eleni_Dulla_SSIS_Packages\\obj"
   ],
-  "SelectedNode": "\\QL_Eleni_Dulla_SSIS_Packages\\QL_Eleni_Dulla_SSIS_Packages.sln",
   "PreviewInSolutionExplorer": false
 }
