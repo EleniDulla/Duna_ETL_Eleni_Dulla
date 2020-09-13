@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Eleni_Dulla_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-09T03:51:18.216864Z</LastWriteTime>
+    <LastWriteTime>2020-09-10T01:38:15.0832023Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Eleni_Dulla_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-09-09T04:43:09.3768115Z</LastWriteTime>
+      <LastWriteTime>2020-09-13T20:11:04.2894349Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Eleni_Dulla_QuickenLoan.dtsx</Name>
-      <LastWriteTime>2020-09-09T04:42:23.7168254Z</LastWriteTime>
+      <LastWriteTime>2020-09-13T21:22:08.5172936Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
