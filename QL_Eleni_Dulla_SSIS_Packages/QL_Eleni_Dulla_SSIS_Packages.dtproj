@@ -26,27 +26,27 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-62UHNOD</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAACAAAAAAAQZgAAAAEAACAAAAAEzoJ9g+PvEi0R5ds5WrDttkMzO53utP0YYiRSNVfhZwAAAAAOgAAAAAIAACAAAAAyxNrN2/aqGEf4R1eI/q/w/GzX+8w2pb+kSEHfsr1rx5AAAACNSvXISUj+SQMKDrZO8ErDWEGDdS3JzFPVD88bNnD5sVnua9nlFbHa8mUquT6S9N3/6544XbuvFSQusi1PsqsBDfENVRLe5f3dUpUDu3nies7sAxQh2sdu1Q+Z18n4n7B9b9p3NWb67fNTqcc+h+LrwLI9mvAzCPBvpGTP5mmg2xXKAGN6TV67qNLE1jl1CzdAAAAA0uWFs3v6nKREFkEiYlP264DKTn7h1JxnYZGe+Fm6DedouTkcCQpEj7c2U5cX0uq/T1V3qqA/02Zk8e0o2m4P2g==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAACAAAAAAAQZgAAAAEAACAAAADEPiywmVFQCPUqDsQeHvl4X+sfvOk6OyEpdgLpiYmCrQAAAAAOgAAAAAIAACAAAABFrPhwVbmT+wL39sF/gEbtLNV7xViZRE4JncfBPj3sl5AAAAB3EgpXZl6F5E/k2NjHug2LhNAefj12MlcFPZgP80OZU86Pbodn6aMj04xmR/TOQXYRnSJS8QWpFSq1xfKCawgLrv+MOgXlWLV6gbr3To5SaUIF0UxioJrjEsmy2tsRiWHjXEk0FLuXYvHQmWX9R2gwDb5eRodDvpeM5JEHSHvw2iWbVUzWlrOF9kIDHJFgjWJAAAAA8TmnD9kQLDb0jHmYURciTCKkO5H56AkHO0+LRmKShIAC4zRYw7OZXrNJFl1Zn73LVBZdio0Vag3Z9WDAP844yw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Eleni_Dulla_LendingQB.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Eleni_Dulla_QuickenLoan.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Pkg_Eleni_Dulla_LendingQB.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Pkg_Eleni_Dulla_QuickenLoan.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Eleni_Dulla_LendingQB.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Pkg_Eleni_Dulla_LendingQB.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{ACC178DE-35C7-4282-8D39-BCF553CC56C8}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">PKG_Eleni_Dull_LendingQB</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{670CAF91-BF54-4758-B721-2C27ACBF3853}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Pkg_Eleni_Dulla_LendingQB</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">167</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">181</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{8A4ADD39-838A-4FD2-8FF4-22FB9DB5961A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{C13FCBB8-C4E8-4878-99A9-0B5B00F35A02}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -678,16 +678,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Eleni_Dulla_QuickenLoan.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Pkg_Eleni_Dulla_QuickenLoan.dtsx">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">{65892AF2-A441-4A53-8139-D0BE4832135A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Eleni_Dulla_QuickenLoan</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">166</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">188</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{E846E407-A32F-416B-B570-A9FC170154AF}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{330D44E6-B5EC-4E43-848E-135513DC2BA9}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -719,6 +719,20 @@
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-62UHNOD\DUNATEST;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="SalesforceConnectionManager_ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">{C2BDD137-41CC-4B83-9BC4-1F39D77804C8}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1247,21 +1261,6 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Salesforce Connection Manager.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.Salesforce Connection Manager.InstanceType">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -1468,7 +1467,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">140</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">150</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
