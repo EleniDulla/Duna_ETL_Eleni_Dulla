@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Eleni_Dulla_QuickenLoan"
   DTS:PackageType="5"
-  DTS:VersionBuild="194"
-  DTS:VersionGUID="{639F2C49-2B1B-4AE8-8EBD-6A536F5AE3EE}">
+  DTS:VersionBuild="195"
+  DTS:VersionGUID="{28397ADF-318B-45AA-AE45-65E632B62212}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -85,25 +85,6 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Salesforce Connection Manager]"
-      DTS:CreationName="Salesforce (KingswaySoft)"
-      DTS:DTSID="{763153B0-29B1-46BD-AA97-1EC1EABA8C27}"
-      DTS:ObjectName="Salesforce Connection Manager">
-      <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Package::SalesforceConnectionManager_ConnectionString]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <SalesforceConnectionManager
-          ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True">
-          <Password
-            Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA9IpyzDxHUaZnOd5cI75ce+RBt+BOU2iXgqrhj6ldCeQAAAAAOgAAAAAIAACAAAABr4XIJhTdb5MLiljqV2I/VvldiZT0bDcBM0+HxpcqHYiAAAAD+9nSqWLguiTB5i7UGWvY6jescUnV4LX3bxCZhLZFXpUAAAAD/SKAPPc3n03VghHRydB1n9zwlQfsatFJgIMsSOfZaxFT2WQvhX+cMkZBTSRSl0WkcwPiUscX8IBQvl8gEC4wc</Password>
-          <SecurityToken
-            Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAXVJoGSqYE8sy4dNvXF9SNqm0eMsku6mtPDUVmaWKARwAAAAAOgAAAAAIAACAAAABhh4gkjvhUc/SadJLAN+WAZ7PN72Bx4ENIQasq0l5PP0AAAACKtyQK9PVG5tgOPi9DxmSF62RdKsAdRf0Yj7XTvvrg4E8FNc+PjIUyFR9LKguNV95fRIn392MLrRYelCCFegGMQAAAAHsShh3Revz4b8feSjP32nmdIgCtxS/8N9zrnJWR5u2ERqYCY7fZECAyikyuw+pPJ3wG03UbxSufhLeENCpz4Iw</SecurityToken>
-        </SalesforceConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:PackageParameters>
     <DTS:PackageParameter
@@ -144,7 +125,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/16/2020 10:53:55 PM</DTS:VariableValue>
+        DTS:DataType="7">9/20/2020 10:07:07 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -228,7 +209,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/16/2020 10:53:55 PM</DTS:VariableValue>
+        DTS:DataType="7">9/20/2020 10:07:07 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -358,14 +339,35 @@
                   ReadOnlyVariables="System::PackageName,User::VarFormEmail,User::Varpassword,User::VarSmtpClient,User::VarsmtpServerPort,User::Varsubject,User::VarToEmail"
                   ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
                   <ProjectItem
-                    Name="Properties\Settings.settings"
-                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_ee4271b506764b7fb915c70ebeb5a515")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_ee4271b506764b7fb915c70ebeb5a515")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -768,35 +770,14 @@ namespace ST_ee4271b506764b7fb915c70ebeb5a515.Properties {
     }
 }]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_ee4271b506764b7fb915c70ebeb5a515")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_ee4271b506764b7fb915c70ebeb5a515")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                    Name="Properties\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.Designer.cs"
                     Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -14287,8 +14268,8 @@ where [refTable].[MarketSourceCode] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task_QuickenLoan_Salesforce\Salesforce Source.Connections[Salesforce]"
-                  connectionManagerID="Package.ConnectionManagers[Salesforce Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Salesforce Connection Manager]"
+                  connectionManagerID="{763153B0-29B1-46BD-AA97-1EC1EABA8C27}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Salesforce Connection Manager]"
                   description="Salesforce Connection"
                   name="Salesforce" />
               </connections>
