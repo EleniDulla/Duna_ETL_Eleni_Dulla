@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Eleni_Dulla_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="181"
-  DTS:VersionGUID="{C13FCBB8-C4E8-4878-99A9-0B5B00F35A02}">
+  DTS:VersionBuild="182"
+  DTS:VersionGUID="{C6C41A47-D5CE-4CE8-B8F6-9D66F252538E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -101,22 +101,6 @@
           AuthType="WindowsAuthentication" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[OData Source 1]"
-      DTS:CreationName="ODATA"
-      DTS:DTSID="{8409972E-710B-40AC-86E5-5B40AC8D10D9}"
-      DTS:ObjectName="OData Source 1">
-      <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Package::ODataSource1_ConnectionString]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <ODataConnectionManager
-          UserName="sharepoint@dunatk.com"
-          Url="https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc"
-          ConnectionString="Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0NDA5Nzc1ODAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQ0MTg0MTU4ODYwMTIxMywwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsNDczMzc4OWYtZDA2NC0wMDAwLTQ3NWEtZDNhYzJlMzA5ODM2LDQ3MzM3ODlmLWQwNjQtMDAwMC00NzVhLWQzYWMyZTMwOTgzNiwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxuSDRQR0tDd28xNEZCN2dZMzNhSGh6R2d3RS8wUi8xTXRlWnhwb1ZKLzh6MmpmVmw5S05qclZaa21rdVdNdlNQNzc5WU40Umcwa0FGYk83UCt0Yk1weGhSNFhtSktuTDN3Mm9QaS9UTW5HV21zb3Q4UVlaRk05R2hTNWFSdzhVR0NzUjRORGF2NHI4N0ZBWkdMOGhaZElCZG1LaGpleXRVM04wQ1R3cjRRT1lvaGtQdkdKMlBxMm1LY05YSzUyb0xBVGRPVXRQU3ZtdytTelRwL09jU2UzRjZVRWlxOXIrTnFzN29rVVNXNTFISExRRXVPWlBHMGJ5Yzl3QWlTTmQ3RHdpTG9Nb3BQdEd1OWxvZXY2dUZkOVQwZ2g5NDBSdE1XTWtTLzFaUDNHNkdyd1lnWFJRNk95WUEyZHpSOGRkVS9pd0FHL0hvb1FEZjRTaHYvdlRsdVE9PTwvU1A+&quot;;User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
-          MicrosoftOnlineServicesAuth="True"
-          AuthType="MicrosoftOnlineService" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:PackageParameters>
     <DTS:PackageParameter
@@ -166,7 +150,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/14/2020 7:25:06 PM</DTS:VariableValue>
+        DTS:DataType="7">9/22/2020 6:53:07 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -250,7 +234,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/14/2020 7:25:06 PM</DTS:VariableValue>
+        DTS:DataType="7">9/22/2020 6:53:07 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -379,36 +363,6 @@
                   Language="CSharp"
                   ReadOnlyVariables="System::PackageName,User::VarFormEmail,User::Varpassword,User::VarSmtpClient,User::VarsmtpServerPort,User::Varsubject,User::VarToEmail"
                   ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
-                  <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_8f6b058ce2d04a2a9d54852ff2b9ce33")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_8f6b058ce2d04a2a9d54852ff2b9ce33")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -614,6 +568,35 @@ using System.Runtime.CompilerServices;
   </ProjectExtensions>
 </Project>]]></ProjectItem>
                   <ProjectItem
+                    Name="Properties\Settings.Designer.cs"
+                    Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_8f6b058ce2d04a2a9d54852ff2b9ce33.Properties.Settings.get_Default():ST_8f6b058ce2d04a2a9d54852ff2b9ce33.Properties.Sett" +
+    "ings")]
+
+namespace ST_8f6b058ce2d04a2a9d54852ff2b9ce33.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+                  <ProjectItem
                     Name="ScriptMain.cs"
                     Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
 /* The Script Task allows you to perform virtually any operation that can be accomplished in
@@ -779,34 +762,35 @@ namespace ST_8f6b058ce2d04a2a9d54852ff2b9ce33
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\Settings.Designer.cs"
-                    Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_8f6b058ce2d04a2a9d54852ff2b9ce33")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_8f6b058ce2d04a2a9d54852ff2b9ce33")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_8f6b058ce2d04a2a9d54852ff2b9ce33.Properties.Settings.get_Default():ST_8f6b058ce2d04a2a9d54852ff2b9ce33.Properties.Sett" +
-    "ings")]
-
-namespace ST_8f6b058ce2d04a2a9d54852ff2b9ce33.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Settings.settings"
                     Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -23058,8 +23042,8 @@ where [refTable].[MarketSourceCode] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task_SharePoint_OData\OData Source.Connections[Connection]"
-                  connectionManagerID="Package.ConnectionManagers[OData Source 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[OData Source 1]"
+                  connectionManagerID="{8409972E-710B-40AC-86E5-5B40AC8D10D9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[OData Source 1]"
                   description="Connection to OData Service"
                   name="Connection" />
               </connections>

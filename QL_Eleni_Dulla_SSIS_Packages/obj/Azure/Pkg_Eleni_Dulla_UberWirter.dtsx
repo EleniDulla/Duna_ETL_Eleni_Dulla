@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Eleni_Dulla_QuickenLoan"
   DTS:PackageType="5"
-  DTS:VersionBuild="212"
-  DTS:VersionGUID="{4BE0918D-EDF8-4C7A-9A78-3106E2DDD2D5}">
+  DTS:VersionBuild="214"
+  DTS:VersionGUID="{8A4B6B2D-8664-496E-8A2D-93CCC37E7AAC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -97,10 +97,10 @@
           ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True">
           <Password
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD6ZriUqT811E0SRgY887VISzGfc87rBWEdcFvOADF6rAAAAAAOgAAAAAIAACAAAAAqIblHS1oL/maIa7Kr691lWkV8+1y15FVxIFpIlbnhhSAAAABwzfofzepBSdON7tWpBPUeYpMH1YoZF2X6i1Yn02S9/EAAAABmx41qSRdFYeeRsDepo2JvDAEmANQ7inJFE3KGBp5S8uDtQjDpJ1v+0mwH4lf87zPRcgcNXLI0+sjkaN+rn2aU</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABZtKsijm6q758HL24fX/JCfglUHs9krbAXNDyMSNfA5AAAAAAOgAAAAAIAACAAAABXjs4xOU9M4S5PDrlQWuPeT4G8oye9T99V8j7i9wIMmCAAAAAsuiWlwWrURdGluAypjLT5/fB/iGIaBZb0r3u8jzES00AAAAB7BQmY3zJFfjUpnAzFk2cZeRQNv74iaYk71JiKiiT4zWwLtWh5Dknn1XLvHo0W7sAfVXGmC1HWq0NxBhXxKT27</Password>
           <SecurityToken
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAv9ZxoBrWHBkHjuUUD4pHNf1OQvYHf782osOhQ1dfLBAAAAAAOgAAAAAIAACAAAADOII+bZQv+e5f9GGN+ESz6iqkURalqASkUy6FgMCGr9EAAAABvTyuMsvHZKWZ3/P4sugzRMEQiRl2vE1NlM4XGiRBiK+Hf5Bqwt0ASSsAz8+0ML2bR6b2DNoSz4U/TIUzqBiCZQAAAADxCqoacDJwEudOZ0OJw1SAHBOvSy0oLTvPF2wsj/30jInw57XGDn5faSNWStfypTUb93ps/SzS/QK2qTPpBziA</SecurityToken>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB+vau1WZcy41jTPQSZnbZLLHn11k0TunQOuEZ1oAEGoQAAAAAOgAAAAAIAACAAAACFWdRBMxL8PHrZpiY8GnKgMW1FeKscnTwLeR8ujU0jCUAAAAD3+fg8JDNiQMb8ZBLFQaCgWPqXQ/mqQBNunAXZmZlcZC3J0NRLaMSnGDQfltpGtfwokMlZnQAWEp3rr/ipaT/4QAAAAIfro+Q/oOBxCGmF2DmbehoTWKTAGwmNBsFjOwf6WGHXeMnj0XfLf2BoGNmnS2kbg7juzRPshd+AtYnl/fWAlrk</SecurityToken>
         </SalesforceConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -144,7 +144,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/21/2020 12:32:54 AM</DTS:VariableValue>
+        DTS:DataType="7">9/22/2020 6:53:09 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -228,7 +228,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/21/2020 12:32:54 AM</DTS:VariableValue>
+        DTS:DataType="7">9/22/2020 6:53:09 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -15552,7 +15552,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Run_Log"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:EventHandlers>
         <DTS:EventHandler
@@ -15703,6 +15703,14 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Execute SQL Task_DeletStgTable" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{585AC798-AEC4-4155-A6D9-88AD900F9317}"
+      DTS:From="Package\Data Flow Task_UberWriter"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Run_Log" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
@@ -15919,6 +15927,28 @@ where [refTable].[MarketSourceCode] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="251.442859606111,311.541180256411">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,76.929413427037"
+              Start="0,0"
+              End="0,69.429413427037">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.429413427037" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -16010,7 +16040,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <NodeLayout
           Size="154.4,41.6"
           Id="Package\Data Flow Task_UberWriter\Conditional Split"
-          TopLeft="350.714291686915,65.7647068046781" />
+          TopLeft="304.28571946767,85.647060024697" />
         <EdgeLayout
           Id="Package\Data Flow Task_UberWriter.Paths[Derived Column Output1]"
           TopLeft="383.114289473028,228.800002917121">
@@ -16081,30 +16111,30 @@ where [refTable].[MarketSourceCode] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_UberWriter.Paths[Conditional Split Default Output]"
-          TopLeft="350.714291686915,92.1647068046781">
+          TopLeft="304.28571946767,106.447060024697">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-120.985719041922,50.3705889431253"
+              EndConnector="-74.5571468226769,36.088235723106"
               Start="0,0"
-              End="-113.485719041922,50.3705889431253">
+              End="-67.0571468226769,36.088235723106">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-47.0828591510336,0" />
+                    End="-33.2785734113385,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="-47.0828591510336,0"
-                    Point2="-51.0828591510336,0"
-                    Point3="-51.0828591510336,4" />
+                    Point1="-33.2785734113385,0"
+                    Point2="-37.2785734113385,0"
+                    Point3="-37.2785734113385,4" />
                   <mssgle:LineSegment
-                    End="-51.0828591510336,46.3705889431253" />
+                    End="-37.2785734113385,32.088235723106" />
                   <mssgle:CubicBezierSegment
-                    Point1="-51.0828591510336,46.3705889431253"
-                    Point2="-51.0828591510336,50.3705889431253"
-                    Point3="-55.0828591510336,50.3705889431253" />
+                    Point1="-37.2785734113385,32.088235723106"
+                    Point2="-37.2785734113385,36.088235723106"
+                    Point3="-41.2785734113385,36.088235723106" />
                   <mssgle:LineSegment
-                    End="-113.485719041922,50.3705889431253" />
+                    End="-67.0571468226769,36.088235723106" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16115,30 +16145,30 @@ where [refTable].[MarketSourceCode] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_UberWriter.Paths[ADO NET Source Output]"
-          TopLeft="320.257145545434,39.5647058930777">
+          TopLeft="239.857145545434,60.3647058930777">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="30.4571461414809,41.4000009116004"
+              EndConnector="141.628573922236,25.2823541316193"
               Start="0,0"
-              End="22.9571461414809,41.4000009116004">
+              End="141.628573922236,17.7823541316193">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="13.5974622150779,0" />
+                    End="0,8.64117706580967" />
                   <mssgle:CubicBezierSegment
-                    Point1="13.5974622150779,0"
-                    Point2="17.5974622150779,0"
-                    Point3="17.5974622150779,4" />
+                    Point1="0,8.64117706580967"
+                    Point2="0,12.6411770658097"
+                    Point3="4,12.6411770658097" />
                   <mssgle:LineSegment
-                    End="17.5974622150779,37.4000009116004" />
+                    End="137.628573922236,12.6411770658097" />
                   <mssgle:CubicBezierSegment
-                    Point1="17.5974622150779,37.4000009116004"
-                    Point2="17.5974622150779,41.4000009116004"
-                    Point3="21.5974622150779,41.4000009116004" />
+                    Point1="137.628573922236,12.6411770658097"
+                    Point2="141.628573922236,12.6411770658097"
+                    Point3="141.628573922236,16.6411770658097" />
                   <mssgle:LineSegment
-                    End="22.9571461414809,41.4000009116004" />
+                    End="141.628573922236,17.7823541316193" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

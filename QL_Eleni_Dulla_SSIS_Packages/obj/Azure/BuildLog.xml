@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Eleni_Dulla_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-21T02:07:04.4994349Z</LastWriteTime>
+    <LastWriteTime>2020-09-24T02:11:05.7573668Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Eleni_Dulla_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-09-14T00:25:09.2927917Z</LastWriteTime>
+      <LastWriteTime>2020-09-22T00:15:23.460587Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -18,12 +18,17 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Eleni_Dulla_UberWirter.dtsx</Name>
-      <LastWriteTime>2020-09-21T04:32:50.3312163Z</LastWriteTime>
+      <LastWriteTime>2020-09-21T04:51:26.5344182Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Eleni_Dulla_LeandingPad.dtsx</Name>
-      <LastWriteTime>2020-09-21T04:39:00.7728113Z</LastWriteTime>
+      <LastWriteTime>2020-09-23T04:23:59.7650843Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Eleni_Dulla_simpleNexus.dtsx</Name>
+      <LastWriteTime>2020-09-24T02:32:33.8590189Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
