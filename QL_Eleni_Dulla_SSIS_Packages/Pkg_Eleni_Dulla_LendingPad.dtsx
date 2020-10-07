@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="8/28/2020 6:03:20 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Eleni_Dulla_LeandingPad"
   DTS:PackageType="5"
-  DTS:VersionBuild="355"
-  DTS:VersionGUID="{9F48423D-7145-449C-9AD3-D9C3167EB1FE}">
+  DTS:VersionBuild="373"
+  DTS:VersionGUID="{2FF3B17A-EA83-4394-871E-AE525C465C03}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -95,25 +95,6 @@
           DTS:ConnectionString="C:\BulkFile\LendingPad.json" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Salesforce Connection Manager]"
-      DTS:CreationName="Salesforce (KingswaySoft)"
-      DTS:DTSID="{5E27640B-695F-4B02-AB79-BB782DC5BC01}"
-      DTS:ObjectName="Salesforce Connection Manager">
-      <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Package::SalesforceConnectionManager_ConnectionString]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <SalesforceConnectionManager
-          ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True">
-          <Password
-            Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACqxf4xfAUKhyCVX+8zoSHTeX9r9+eRl5/PecAlGPMVEAAAAAAOgAAAAAIAACAAAAAjqZQxCHccb1DkrDXKyisLpcaNFD49r6CYr2BT9YM7rCAAAAAXOx48COh/qKPwDiMDUTNzzXqpJ1k3C/jwi0+X63+vrUAAAAC3WF+gPJY1bcB/LkxK1Yu+S8gjWUtGUNwdxvDBq9mdVFhOk0wsLcCsd2kN92CUKnkxlY+Liow6LxxRntCQIb8D</Password>
-          <SecurityToken
-            Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADjyelFvZTKpkii2nKTZ1vw98z2nVTtlnPloFHWu/MsrAAAAAAOgAAAAAIAACAAAAC6kWf6+tNdwLAEDRyUpEmpOALT0ab91x2InxRKGW+1FkAAAADIEjTOMU7ou7zocNGB+SVMVnnJK+qFWCEfscwpffOJerNoz5PIDi5yNGZOWdGl/SheOHbJWWGJYTbKVBQTwDIbQAAAADgrd2xXgowef5ItP0TwoY14TA9iXbVICLFNgdx5SmIsm4c/Ec41rT/GUJKeer3ZXdZEOGo38CVcGRBhPhpW0ZM</SecurityToken>
-        </SalesforceConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:PackageParameters>
     <DTS:PackageParameter
@@ -163,7 +144,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 12:24:00 AM</DTS:VariableValue>
+        DTS:DataType="7">10/5/2020 6:01:11 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -210,7 +191,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarFullArchivedFolder">
       <DTS:VariableValue
-        DTS:DataType="8">\LendingPad.Zip2020-09-21-00-46-24.zip\LendingPad.Zip2020-09-22-18-57-18.zip\LendingPad.Zip2020-09-23-00-23-59.zip</DTS:VariableValue>
+        DTS:DataType="8">\LendingPad.Zip2020-09-21-00-46-24.zip\LendingPad.Zip2020-09-22-18-57-18.zip\LendingPad.Zip2020-09-23-00-23-59.zip\LendingPad.Zip2020-09-24-22-09-52.zip\LendingPad.Zip2020-09-25-19-53-25.zip\LendingPad.Zip2020-09-25-20-31-42.zip\LendingPad.Zip2020-09-25-20-39-42.zip\LendingPad.Zip2020-09-25-23-06-42.zip\LendingPad.Zip2020-09-28-19-45-46.zip\LendingPad.Zip2020-09-29-19-47-48.zip\LendingPad.Zip2020-10-01-17-48-48.zip\LendingPad.Zip2020-10-05-18-01-10.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -303,7 +284,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 12:24:00 AM</DTS:VariableValue>
+        DTS:DataType="7">10/5/2020 6:01:11 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -382,7 +363,7 @@
         <DTS:Executable
           DTS:refId="Package\Foreach Loop Container\File System Task_Rename&amp;Move"
           DTS:CreationName="Microsoft.FileSystemTask"
-          DTS:Description="C:\BulkFile\Archaive Folder\LendingPad.Zip2020-09-23-00-23-59.zip"
+          DTS:Description="C:\BulkFile\Archaive Folder\LendingPad.Zip2020-10-05-18-01-10.zip"
           DTS:DTSID="{FA5387BC-9FE6-461F-AC67-7EC9E3E2AD84}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
@@ -596,8 +577,8 @@
       <DTS:ObjectData>
         <ScriptProject
           Name="ST_f1031a161f31458595b21e246e53af32"
-          VSTAMajorVersion="15"
-          VSTAMinorVersion="0"
+          VSTAMajorVersion="2"
+          VSTAMinorVersion="2"
           Language="CSharp"
           ReadOnlyVariables="User::VarFileName,User::VarLocalFolder"
           ReadWriteVariables="User::VarFileExistesFlag">
@@ -1228,8 +1209,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <DTS:ObjectData>
         <ScriptProject
           Name="ST_c9bc3f88b83a45b7b04f0a90f2192a5f"
-          VSTAMajorVersion="15"
-          VSTAMinorVersion="0"
+          VSTAMajorVersion="2"
+          VSTAMinorVersion="2"
           Language="CSharp"
           ReadOnlyVariables="System::PackageName,System::StartTime,User::VarFileName,User::VarFormEmail,User::VarLocalFolder,User::Varpassword,User::VarSmtpClient,User::VarsmtpServerPort,User::Varsubject,User::VarToEmail">
           <ProjectItem
@@ -2003,8 +1984,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                   <DTS:ObjectData>
                     <ScriptProject
                       Name="ST_ee4271b506764b7fb915c70ebeb5a515"
-                      VSTAMajorVersion="15"
-                      VSTAMinorVersion="0"
+                      VSTAMajorVersion="2"
+                      VSTAMinorVersion="2"
                       Language="CSharp"
                       ReadOnlyVariables="System::PackageName,User::VarFormEmail,User::Varpassword,User::VarSmtpClient,User::VarsmtpServerPort,User::Varsubject,User::VarToEmail"
                       ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
@@ -2941,7 +2922,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                           dataType="str"
                           errorOrTruncationOperation="Computation"
                           errorRowDisposition="FailComponent"
-                          length="225"
+                          length="10"
                           lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[Channal]"
                           name="Channal"
                           truncationRowDisposition="FailComponent">
@@ -2950,13 +2931,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">(DT_STR,225,1252)([ISNULL]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]}) ? "Dunatek" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"Dunatek",1) &gt; 0 ? "Dunatek" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"IBX",1) &gt; 0 ? "IBX" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"Fusion",1) &gt; 0 ? "Fusion" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"HARP",1) &gt; 0 ? "HARP" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"Bills",1) &gt; 0 ? "Bills" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"VA Loan",1) &gt; 0 ? "VA Loan" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"Military",1) &gt; 0 ? "Military" : [REPLACE]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},".com",""))</property>
+                              name="Expression">(DT_STR,10,1252)([ISNULL]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]}) ? "Dunatek" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"Dunatek",1) &gt; 0 ? "Dunatek" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"IBX",1) &gt; 0 ? "IBX" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"Fusion",1) &gt; 0 ? "Fusion" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"HARP",1) &gt; 0 ? "HARP" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"Bills",1) &gt; 0 ? "Bills" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"VA Loan",1) &gt; 0 ? "VA Loan" : [FINDSTRING]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},"Military",1) &gt; 0 ? "Military" : [REPLACE]((DT_WSTR,255)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]},".com",""))</property>
                             <property
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
-                              name="FriendlyExpression">(DT_STR,225,1252)(ISNULL((DT_WSTR,255)LeadSource) ? "Dunatek" : FINDSTRING((DT_WSTR,255)LeadSource,"Dunatek",1) &gt; 0 ? "Dunatek" : FINDSTRING((DT_WSTR,255)LeadSource,"IBX",1) &gt; 0 ? "IBX" : FINDSTRING((DT_WSTR,255)LeadSource,"Fusion",1) &gt; 0 ? "Fusion" : FINDSTRING((DT_WSTR,255)LeadSource,"HARP",1) &gt; 0 ? "HARP" : FINDSTRING((DT_WSTR,255)LeadSource,"Bills",1) &gt; 0 ? "Bills" : FINDSTRING((DT_WSTR,255)LeadSource,"VA Loan",1) &gt; 0 ? "VA Loan" : FINDSTRING((DT_WSTR,255)LeadSource,"Military",1) &gt; 0 ? "Military" : REPLACE((DT_WSTR,255)LeadSource,".com",""))</property>
+                              name="FriendlyExpression">(DT_STR,10,1252)(ISNULL((DT_WSTR,255)LeadSource) ? "Dunatek" : FINDSTRING((DT_WSTR,255)LeadSource,"Dunatek",1) &gt; 0 ? "Dunatek" : FINDSTRING((DT_WSTR,255)LeadSource,"IBX",1) &gt; 0 ? "IBX" : FINDSTRING((DT_WSTR,255)LeadSource,"Fusion",1) &gt; 0 ? "Fusion" : FINDSTRING((DT_WSTR,255)LeadSource,"HARP",1) &gt; 0 ? "HARP" : FINDSTRING((DT_WSTR,255)LeadSource,"Bills",1) &gt; 0 ? "Bills" : FINDSTRING((DT_WSTR,255)LeadSource,"VA Loan",1) &gt; 0 ? "VA Loan" : FINDSTRING((DT_WSTR,255)LeadSource,"Military",1) &gt; 0 ? "Military" : REPLACE((DT_WSTR,255)LeadSource,".com",""))</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -3051,52 +3032,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
                               name="FriendlyExpression">(DT_STR,255,1252)(ISNULL((DT_WSTR,255)LeadSource) ? "Dunatek" : FINDSTRING((DT_WSTR,255)LeadSource,"Dunatek",1) &gt; 0 ? "Dunatek" : FINDSTRING((DT_WSTR,255)LeadSource,"IBX",1) &gt; 0 ? "IBX" : FINDSTRING((DT_WSTR,255)LeadSource,"Fusion",1) &gt; 0 ? "Fusion" : FINDSTRING((DT_WSTR,255)LeadSource,"HARP",1) &gt; 0 ? "HARP" : FINDSTRING((DT_WSTR,255)LeadSource,"Bills",1) &gt; 0 ? "Bills" : FINDSTRING((DT_WSTR,255)LeadSource,"VA Loan",1) &gt; 0 ? "VA Loan" : FINDSTRING((DT_WSTR,255)LeadSource,"Military",1) &gt; 0 ? "Military" : REPLACE((DT_WSTR,255)LeadSource,".com",""))</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerFirstName]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Computation"
-                          errorRowDisposition="FailComponent"
-                          length="101"
-                          lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerFirstName]"
-                          name="LoanOfficerFirstName"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.String"
-                              description="Derived Column Expression"
-                              name="Expression">[SUBSTRING](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]},1,[FINDSTRING](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]}," ",1) - 1)</property>
-                            <property
-                              containsID="true"
-                              dataType="System.String"
-                              description="Derived Column Friendly Expression"
-                              expressionType="Notify"
-                              name="FriendlyExpression">SUBSTRING(LoanOfficer,1,FINDSTRING(LoanOfficer," ",1) - 1)</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerLastName]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Computation"
-                          errorRowDisposition="FailComponent"
-                          length="101"
-                          lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerLastName]"
-                          name="LoanOfficerLastName"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.String"
-                              description="Derived Column Expression"
-                              name="Expression">[SUBSTRING](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]},[FINDSTRING](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]}," ",1) + 1,[LEN](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]}) - [FINDSTRING](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]}," ",1))</property>
-                            <property
-                              containsID="true"
-                              dataType="System.String"
-                              description="Derived Column Friendly Expression"
-                              expressionType="Notify"
-                              name="FriendlyExpression">SUBSTRING(LoanOfficer,FINDSTRING(LoanOfficer," ",1) + 1,LEN(LoanOfficer) - FINDSTRING(LoanOfficer," ",1))</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -3195,6 +3130,52 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                               name="FriendlyExpression">(DT_STR,128,1252)SUBSTRING((DT_WSTR,128)Closer_Name,1,FINDSTRING((DT_WSTR,128)Closer_Name," ",1) - 1)</property>
                           </properties>
                         </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerFirstName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="100"
+                          lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerFirstName]"
+                          name="LoanOfficerFirstName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">[SUBSTRING]((DT_WSTR,100)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]},1,[FINDSTRING](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]}," ",1) - 1)</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">SUBSTRING((DT_WSTR,100)LoanOfficer,1,FINDSTRING(LoanOfficer," ",1) - 1)</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerLastName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="100"
+                          lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerLastName]"
+                          name="LoanOfficerLastName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">[SUBSTRING]((DT_WSTR,100)#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]},[FINDSTRING](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]}," ",1) + 1,[LEN](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]}) - [FINDSTRING](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]}," ",1))</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">SUBSTRING((DT_WSTR,100)LoanOfficer,FINDSTRING(LoanOfficer," ",1) + 1,LEN(LoanOfficer) - FINDSTRING(LoanOfficer," ",1))</property>
+                          </properties>
+                        </outputColumn>
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -3235,6 +3216,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                       refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column 3.Inputs[Derived Column Input]"
                       description="Input to the Derived Column Transformation"
                       name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column 3.Inputs[Derived Column Input].Columns[MortgageInsuranceCompany]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="128"
+                          cachedName="MortgageInsuranceCompany"
+                          lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[MortgageInsuranceCompany]" />
+                      </inputColumns>
                       <externalMetadataColumns />
                     </input>
                   </inputs>
@@ -3245,6 +3235,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                       exclusionGroup="1"
                       name="Derived Column Output"
                       synchronousInputId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column 3.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column 3.Outputs[Derived Column Output].Columns[DDC_MortgageInsuranceCompany]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="128"
+                          lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column 3.Outputs[Derived Column Output].Columns[DDC_MortgageInsuranceCompany]"
+                          name="DDC_MortgageInsuranceCompany"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_STR,128,1252)([ISNULL](#{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[MortgageInsuranceCompany]}) ? "Dunatek" : #{Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[MortgageInsuranceCompany]})</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_STR,128,1252)(ISNULL(MortgageInsuranceCompany) ? "Dunatek" : MortgageInsuranceCompany)</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
                       <externalMetadataColumns />
                     </output>
                     <output
@@ -6362,7 +6378,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                           refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Inputs[Fuzzy Lookup Input].Columns[Channal]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="225"
+                          cachedLength="10"
                           cachedName="Channal"
                           lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[Channal]">
                           <properties>
@@ -6529,7 +6545,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Inputs[Fuzzy Lookup Input].Columns[LoanOfficerFirstName]"
                           cachedDataType="wstr"
-                          cachedLength="101"
+                          cachedLength="100"
                           cachedName="LoanOfficerFirstName"
                           lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerFirstName]">
                           <properties>
@@ -6562,7 +6578,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Inputs[Fuzzy Lookup Input].Columns[LoanOfficerLastName]"
                           cachedDataType="wstr"
-                          cachedLength="101"
+                          cachedLength="100"
                           cachedName="LoanOfficerLastName"
                           lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerLastName]">
                           <properties>
@@ -9084,7 +9100,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                           refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Channal]"
                           codePage="1252"
                           dataType="str"
-                          length="225"
+                          length="10"
                           lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Channal]"
                           name="Channal">
                           <properties>
@@ -9204,54 +9220,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerFirstName]"
-                          dataType="wstr"
-                          length="101"
-                          lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerFirstName]"
-                          name="LoanOfficerFirstName">
-                          <properties>
-                            <property
-                              dataType="System.Null"
-                              description="Specifies the reference table column that is copied to the output for each match result."
-                              name="CopyFromReferenceColumn"
-                              state="escaped" />
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerFirstName]}</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies whether the column is used to indicate confidence or similarity."
-                              name="ColumnType"
-                              typeConverter="tcColumnType">0</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerLastName]"
-                          dataType="wstr"
-                          length="101"
-                          lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerLastName]"
-                          name="LoanOfficerLastName">
-                          <properties>
-                            <property
-                              dataType="System.Null"
-                              description="Specifies the reference table column that is copied to the output for each match result."
-                              name="CopyFromReferenceColumn"
-                              state="escaped" />
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerLastName]}</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies whether the column is used to indicate confidence or similarity."
-                              name="ColumnType"
-                              typeConverter="tcColumnType">0</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
                           refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[ProssesorFirstName]"
                           codePage="1252"
                           dataType="str"
@@ -9344,6 +9312,54 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                               dataType="System.Int32"
                               description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
                               name="SourceInputColumnLineageID">#{Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[CloserLastName]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies whether the column is used to indicate confidence or similarity."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerFirstName]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerFirstName]"
+                          name="LoanOfficerFirstName">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the reference table column that is copied to the output for each match result."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerFirstName]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies whether the column is used to indicate confidence or similarity."
+                              name="ColumnType"
+                              typeConverter="tcColumnType">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerLastName]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerLastName]"
+                          name="LoanOfficerLastName">
+                          <properties>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the reference table column that is copied to the output for each match result."
+                              name="CopyFromReferenceColumn"
+                              state="escaped" />
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerLastName]}</property>
                             <property
                               dataType="System.Int32"
                               description="Specifies whether the column is used to indicate confidence or similarity."
@@ -13589,7 +13605,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                           refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Channal]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="225"
+                          cachedLength="10"
                           cachedName="Channal"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_ReadJSONFile\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
                           lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Channal]" />
@@ -13634,14 +13650,14 @@ where [refTable].[MarketSourceCode] = ?</property>
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanOfficerFirstName]"
                           cachedDataType="wstr"
-                          cachedLength="101"
+                          cachedLength="100"
                           cachedName="LoanOfficerFirstName"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_ReadJSONFile\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFirstName]"
                           lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerFirstName]" />
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_ReadJSONFile\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanOfficerLastName]"
                           cachedDataType="wstr"
-                          cachedLength="101"
+                          cachedLength="100"
                           cachedName="LoanOfficerLastName"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_ReadJSONFile\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                           lineageId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerLastName]" />
@@ -14638,10 +14654,10 @@ where [refTable].[MarketSourceCode] = ?</property>
               </components>
               <paths>
                 <path
-                  refId="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[Conditional Split Default Output]"
+                  refId="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[BorrFirstandLastName_NotTest]"
                   endId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column.Inputs[Derived Column Input]"
-                  name="Conditional Split Default Output"
-                  startId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Conditional Split.Outputs[Conditional Split Default Output]" />
+                  name="BorrFirstandLastName_NotTest"
+                  startId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Conditional Split.Outputs[BorrFirstandLastName_NotTest]" />
                 <path
                   refId="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[Derived Column Output]"
                   endId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Lookup.Inputs[Lookup Input]"
@@ -14674,6 +14690,22 @@ where [refTable].[MarketSourceCode] = ?</property>
                   startId="Package\Sequence Container\Data Flow Task_ReadJSONFile\Row Count.Outputs[Row Count Output 1]" />
               </paths>
             </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{5D46E29F-8C7D-4135-BF8F-50FCCE4017A1}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{8A24D034-D5EB-45C8-AB26-16A4CF23F1B4}"
+              SQLTask:SqlStatementSource="&#xA;if exists&#xA;(select 1&#xA; From [dbo].[Stg_Eleni_Dulla_QL]&#xA;Where InsuranceCompany IS NULL&#xA; )&#xA; begin&#xA;Insert into [MortgageInsuranceCompanyCrossWalkReference] ( [MortgageInsuranceCompany], [Insurance_Company] )&#xA;Select DISTINCT MortgageInsuranceCompany,&#xA; MortgageInsuranceCompany   as InsuranceCompany&#xA;From [Stg_Eleni_Dulla_QL]&#xA;Where InsuranceCompany IS NULL&#xA;end" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -14746,7 +14778,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{450F9C15-944B-4674-8EE5-97AF095FF49D}"
+          DTS:DTSID="{C4D84F8C-AC85-4A79-9389-03434695C251}"
           DTS:From="Package\Sequence Container\Execute SQL Task_DeletStgTable"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -14754,10 +14786,18 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
-          DTS:DTSID="{A11133DA-564F-4B8D-B3C1-8D16CF040AF0}"
-          DTS:From="Package\Sequence Container\Data Flow Task_ReadJSONFile"
+          DTS:DTSID="{A8CE73D6-502F-474C-8CE0-706DEAD4AF11}"
+          DTS:From="Package\Sequence Container\File System Task_DeleteLendingPadJSONFile"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Sequence Container\Execute SQL Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{A1F60055-1AA1-4068-9E3F-E3B8C54B0275}"
+          DTS:From="Package\Sequence Container\Data Flow Task_ReadJSONFile"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
           DTS:To="Package\Sequence Container\File System Task_DeleteLendingPadJSONFile" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
@@ -14911,8 +14951,8 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:ObjectData>
             <ScriptProject
               Name="ST_c828d5702a484f2089b343be8e492ed3"
-              VSTAMajorVersion="15"
-              VSTAMinorVersion="0"
+              VSTAMajorVersion="2"
+              VSTAMinorVersion="2"
               Language="CSharp" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -14934,7 +14974,7 @@ where [refTable].[MarketSourceCode] = ?</property>
 <!--If you manually edit this section and make a mistake, you can delete it. -->
 <!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
-  Version="8">
+  Version="sql12">
   <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
@@ -14948,21 +14988,21 @@ where [refTable].[MarketSourceCode] = ?</property>
         <NodeLayout
           Size="233.6,41.6"
           Id="Package\Foreach Loop Container\File System Task_Rename&amp;Move"
-          TopLeft="25.5591899397774,117.524373729831" />
+          TopLeft="20.5591898546279,86.9361380067249" />
         <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
-          TopLeft="142.993884059744,61.7882379109472">
+          TopLeft="140.493884017169,61.7882379109472">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,55.7361358188838"
+              EndConnector="0,25.1479000957777"
               Start="0,0"
-              End="0,48.2361358188838">
+              End="0,17.6479000957777">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.2361358188838" />
+                    End="0,17.6479000957777" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14974,68 +15014,56 @@ where [refTable].[MarketSourceCode] = ?</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="308.8,211.2"
-          Size="308.8,254.4"
+          PanelSize="264.8,188"
+          Size="264.8,231.2"
           Id="Package\Foreach Loop Container"
-          TopLeft="367.959189939778,134.401682512323" />
+          TopLeft="308.673474644434,157.342859304653" />
         <NodeLayout
           Size="148.8,41.6"
           Id="Package\FTP Task"
-          TopLeft="24.2857146992972,57.3529419808241" />
+          TopLeft="35.0000005960461,57.3529419808241" />
         <NodeLayout
           Size="156.8,41.6"
           Id="Package\Run_Log"
-          TopLeft="463.26531401181,538.57143612469" />
+          TopLeft="228.265310009784,527.100847728525" />
         <NodeLayout
           Size="224.8,41.6"
           Id="Package\Script Task_ChechFileExistence"
-          TopLeft="13.6734696206137,209.747902101299" />
+          TopLeft="0.102040818065078,299.983197484462" />
         <NodeLayout
           Size="184.8,41.6"
           Id="Package\Script Task_SendEmail"
-          TopLeft="230.816330461391,80.8403372682087" />
+          TopLeft="196.530615591794,69.3697488720439" />
         <NodeLayout
           Size="221.6,41.6"
           Id="Package\Sequence Container\Data Flow Task_ReadJSONFile"
-          TopLeft="26.0326641584628,161.092442095072" />
+          TopLeft="35.3183786023119,159.563030308917" />
         <NodeLayout
           Size="234.4,41.6"
           Id="Package\Sequence Container\Execute SQL Task_DeletStgTable"
-          TopLeft="21.2551125611231,93.7352977533246" />
+          TopLeft="21.255112561123,83.0294152502375" />
         <NodeLayout
           Size="249.6,41.6"
           Id="Package\Sequence Container\Execute SQL Task_MaxModifiedDate"
-          TopLeft="5.50000000000001,22.8109274875744" />
+          TopLeft="6.92857145289976,15.1638685567979" />
         <NodeLayout
           Size="288.8,41.6"
           Id="Package\Sequence Container\File System Task_DeleteLendingPadJSONFile"
-          TopLeft="25.7714401274313,243.899165945482" />
+          TopLeft="9.71429671073486,237.78151880086" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
-          TopLeft="130.3,64.4109274875744">
+          TopLeft="135.091842007011,56.7638685567979">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="8.15511256112313,29.3243702657502"
+              EndConnector="0,26.2655466934396"
               Start="0,0"
-              End="8.15511256112313,21.8243702657502">
+              End="0,18.7655466934396">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.6621851328751" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.6621851328751"
-                    Point2="0,14.6621851328751"
-                    Point3="4,14.6621851328751" />
-                  <mssgle:LineSegment
-                    End="4.15511256112313,14.6621851328751" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4.15511256112313,14.6621851328751"
-                    Point2="8.15511256112313,14.6621851328751"
-                    Point3="8.15511256112313,18.6621851328751" />
-                  <mssgle:LineSegment
-                    End="8.15511256112313,21.8243702657502" />
+                    End="0,18.7655466934396" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15044,20 +15072,24 @@ where [refTable].[MarketSourceCode] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Sequence Container\Execute SQL Task"
+          TopLeft="77.02858320353,330.000006198884" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="137.643888359793,135.335297753325">
+          TopLeft="142.286745581717,124.629415250238">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,25.7571443417478"
+              EndConnector="0,34.9336150586792"
               Start="0,0"
-              End="0,18.2571443417478">
+              End="0,27.4336150586792">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.2571443417478" />
+                    End="0,27.4336150586792" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15068,30 +15100,40 @@ where [refTable].[MarketSourceCode] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
-          TopLeft="136.832664158463,202.692442095072">
+          TopLeft="156.171439957132,279.38151880086">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="33.3387759689685,41.2067238504099"
+              EndConnector="0,50.6184873980234"
               Start="0,0"
-              End="33.3387759689685,33.7067238504099">
+              End="0,43.1184873980234">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.603361925205" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.603361925205"
-                    Point2="0,20.603361925205"
-                    Point3="4,20.603361925205" />
+                    End="0,43.1184873980234" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 3]"
+          TopLeft="150.116337656523,201.163030308917">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.6184884919436"
+              Start="0,0"
+              End="0,29.1184884919436">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="29.3387759689685,20.603361925205" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29.3387759689685,20.603361925205"
-                    Point2="33.3387759689685,20.603361925205"
-                    Point3="33.3387759689685,24.603361925205" />
-                  <mssgle:LineSegment
-                    End="33.3387759689685,33.7067238504099" />
+                    End="0,29.1184884919436" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15103,36 +15145,36 @@ where [refTable].[MarketSourceCode] = ?</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="352,340.8"
-          Size="352,384"
+          PanelSize="313.6,442.4"
+          Size="313.6,485.6"
           Id="Package\Sequence Container"
-          TopLeft="838.832666202051,120.714287407258" />
+          TopLeft="614.546948096774,92.4201693633848" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="676.759189939778,261.601682512323">
+          TopLeft="573.473474644434,272.942859304653">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="162.073476262272,51.1126048949353"
+              EndConnector="41.0734734523401,-17.3226899412682"
               Start="0,0"
-              End="154.573476262272,51.1126048949353">
+              End="33.5734734523401,-17.3226899412682">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="77.0367381311362,0" />
+                    End="20.5631511187886,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="77.0367381311362,0"
-                    Point2="81.0367381311362,0"
-                    Point3="81.0367381311362,4" />
+                    Point1="20.5631511187886,0"
+                    Point2="24.5631511187886,0"
+                    Point3="24.5631511187886,-4" />
                   <mssgle:LineSegment
-                    End="81.0367381311362,47.1126048949353" />
+                    End="24.5631511187886,-13.3226899412682" />
                   <mssgle:CubicBezierSegment
-                    Point1="81.0367381311362,47.1126048949353"
-                    Point2="81.0367381311362,51.1126048949353"
-                    Point3="85.0367381311362,51.1126048949353" />
+                    Point1="24.5631511187886,-13.3226899412682"
+                    Point2="24.5631511187886,-17.3226899412682"
+                    Point3="28.5631511187886,-17.3226899412682" />
                   <mssgle:LineSegment
-                    End="154.573476262272,51.1126048949353" />
+                    End="33.5734734523401,-17.3226899412682" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15143,30 +15185,30 @@ where [refTable].[MarketSourceCode] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="1014.83266620205,504.714287407258">
+          TopLeft="614.546948096774,414.820169363385">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-473.167352190241,33.8571487174319"
+              EndConnector="-229.48163808699,133.08067836514"
               Start="0,0"
-              End="-473.167352190241,26.3571487174319">
+              End="-221.98163808699,133.08067836514">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12.9285743587159" />
+                    End="-88.2448358024552,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,12.9285743587159"
-                    Point2="0,16.9285743587159"
-                    Point3="-4,16.9285743587159" />
+                    Point1="-88.2448358024552,0"
+                    Point2="-92.2448358024552,0"
+                    Point3="-92.2448358024552,4" />
                   <mssgle:LineSegment
-                    End="-469.167352190241,16.9285743587159" />
+                    End="-92.2448358024552,129.08067836514" />
                   <mssgle:CubicBezierSegment
-                    Point1="-469.167352190241,16.9285743587159"
-                    Point2="-473.167352190241,16.9285743587159"
-                    Point3="-473.167352190241,20.9285743587159" />
+                    Point1="-92.2448358024552,129.08067836514"
+                    Point2="-92.2448358024552,133.08067836514"
+                    Point3="-96.2448358024552,133.08067836514" />
                   <mssgle:LineSegment
-                    End="-473.167352190241,26.3571487174319" />
+                    End="-221.98163808699,133.08067836514" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15177,30 +15219,30 @@ where [refTable].[MarketSourceCode] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="98.6857146992972,98.9529419808241">
+          TopLeft="109.400000596046,98.9529419808241">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-8.7455784120168,110.794960120475"
+              EndConnector="-33.0312931113144,201.030255503638"
               Start="0,0"
-              End="-8.7455784120168,103.294960120475">
+              End="-33.0312931113144,193.530255503638">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,62.0071741212443" />
+                    End="0,115.765728190506" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,62.0071741212443"
-                    Point2="0,66.0071741212443"
-                    Point3="-4,66.0071741212443" />
+                    Point1="0,115.765728190506"
+                    Point2="0,119.765728190506"
+                    Point3="-4,119.765728190506" />
                   <mssgle:LineSegment
-                    End="-4.7455784120168,66.0071741212443" />
+                    End="-29.0312931113144,119.765728190506" />
                   <mssgle:CubicBezierSegment
-                    Point1="-4.7455784120168,66.0071741212443"
-                    Point2="-8.7455784120168,66.0071741212443"
-                    Point3="-8.7455784120168,70.0071741212443" />
+                    Point1="-29.0312931113144,119.765728190506"
+                    Point2="-33.0312931113144,119.765728190506"
+                    Point3="-33.0312931113144,123.765728190506" />
                   <mssgle:LineSegment
-                    End="-8.7455784120168,103.294960120475" />
+                    End="-33.0312931113144,193.530255503638" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15211,73 +15253,73 @@ where [refTable].[MarketSourceCode] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="238.473469620614,230.547902101299">
+          TopLeft="224.902040818065,320.783197484462">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="129.485720319164,31.0537804110238"
+              EndConnector="83.7714338263689,-47.8403381798094"
               Start="0,0"
-              End="121.985720319164,31.0537804110238">
+              End="76.2714338263689,-47.8403381798094">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="60.7428601595822,0" />
+                    End="37.8857169131845,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="60.7428601595822,0"
-                    Point2="64.7428601595822,0"
-                    Point3="64.7428601595822,4" />
+                    Point1="37.8857169131845,0"
+                    Point2="41.8857169131845,0"
+                    Point3="41.8857169131845,-4" />
                   <mssgle:LineSegment
-                    End="64.7428601595822,27.0537804110238" />
+                    End="41.8857169131845,-43.8403381798094" />
                   <mssgle:CubicBezierSegment
-                    Point1="64.7428601595822,27.0537804110238"
-                    Point2="64.7428601595822,31.0537804110238"
-                    Point3="68.7428601595822,31.0537804110238" />
+                    Point1="41.8857169131845,-43.8403381798094"
+                    Point2="41.8857169131845,-47.8403381798094"
+                    Point3="45.8857169131845,-47.8403381798094" />
                   <mssgle:LineSegment
-                    End="121.985720319164,31.0537804110238" />
+                    End="76.2714338263689,-47.8403381798094" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="56.7428601595822,-22,16,16"
+              BoundingBox="33.8857169131845,1,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="162.206802953947,209.747902101299">
+          TopLeft="148.635374151398,299.983197484462">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="161.009527507444,-87.3075648330907"
+              EndConnector="140.295241440396,-189.013448612418"
               Start="0,0"
-              End="161.009527507444,-79.8075648330907">
+              End="140.295241440396,-181.513448612418">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-31.2932346887123" />
+                    End="0,-72.4068498984474" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-31.2932346887123"
-                    Point2="0,-35.2932346887123"
-                    Point3="4,-35.2932346887123" />
+                    Point1="0,-72.4068498984474"
+                    Point2="0,-76.4068498984474"
+                    Point3="4,-76.4068498984474" />
                   <mssgle:LineSegment
-                    End="157.009527507444,-35.2932346887123" />
+                    End="136.295241440396,-76.4068498984474" />
                   <mssgle:CubicBezierSegment
-                    Point1="157.009527507444,-35.2932346887123"
-                    Point2="161.009527507444,-35.2932346887123"
-                    Point3="161.009527507444,-39.2932346887123" />
+                    Point1="136.295241440396,-76.4068498984474"
+                    Point2="140.295241440396,-76.4068498984474"
+                    Point3="140.295241440396,-80.4068498984474" />
                   <mssgle:LineSegment
-                    End="161.009527507444,-79.8075648330907" />
+                    End="140.295241440396,-181.513448612418" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="72.5047637537219,-30.2932346887123,16,16"
+              BoundingBox="62.147620720198,-71.4068498984474,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -15354,9 +15396,13 @@ where [refTable].[MarketSourceCode] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column 3"
+          TopLeft="41.857143416697,284.941178980171" />
+        <NodeLayout
           Size="152.8,41.6"
           Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column"
-          TopLeft="34.4999990633558,115.44117752161" />
+          TopLeft="7.35714145825858,136.088236634707" />
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\Fuzzy Lookup 1"
@@ -15364,27 +15410,131 @@ where [refTable].[MarketSourceCode] = ?</property>
         <NodeLayout
           Size="172,41.6"
           Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\Lookup"
-          TopLeft="265.000001958438,191.647061118617" />
+          TopLeft="285.000002299036,184.00000218784" />
         <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\Derived Column 3"
-          TopLeft="91.142858541742,284.176473087093" />
+          Size="129.6,41.6"
+          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\Row Count"
+          TopLeft="289.000010473387,336.929412515436" />
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\OLE DB Destination"
           TopLeft="288.714295007744,461.235297024044" />
         <NodeLayout
-          Size="154.4,41.6"
-          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\Conditional Split"
-          TopLeft="364.714294667147,89.5882362700664" />
-        <NodeLayout
           Size="227.2,41.6"
           Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\JSON Source (REST API or File)"
           TopLeft="174,20" />
         <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\Row Count"
-          TopLeft="289.000010473387,336.929412515436" />
+          Size="154.4,41.6"
+          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile\Conditional Split"
+          TopLeft="289.000007663455,96.4705893077653" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[Derived Column Output1]"
+          TopLeft="204.257143416697,305.741178980171">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="84.74286705669,51.9882335352654"
+              Start="0,0"
+              End="77.24286705669,51.9882335352654">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="38.371433528345,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="38.371433528345,0"
+                    Point2="42.371433528345,0"
+                    Point3="42.371433528345,4" />
+                  <mssgle:LineSegment
+                    End="42.371433528345,47.9882335352654" />
+                  <mssgle:CubicBezierSegment
+                    Point1="42.371433528345,47.9882335352654"
+                    Point2="42.371433528345,51.9882335352654"
+                    Point3="46.371433528345,51.9882335352654" />
+                  <mssgle:LineSegment
+                    End="77.24286705669,51.9882335352654" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[Derived Column Output]"
+          TopLeft="160.157141458259,162.488236634707">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="124.842860840777,42.3117655531338"
+              Start="0,0"
+              End="117.342860840777,42.3117655531338">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="48.7114301327727,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="48.7114301327727,0"
+                    Point2="52.7114301327727,0"
+                    Point3="52.7114301327727,4" />
+                  <mssgle:LineSegment
+                    End="52.7114301327727,38.3117655531338" />
+                  <mssgle:CubicBezierSegment
+                    Point1="52.7114301327727,38.3117655531338"
+                    Point2="52.7114301327727,42.3117655531338"
+                    Point3="56.7114301327727,42.3117655531338" />
+                  <mssgle:LineSegment
+                    End="117.342860840777,42.3117655531338" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[BorrFirstandLastName_NotTest]"
+          TopLeft="289.000007663455,117.270589307765">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-128.842866205196,34.0176473269413"
+              Start="0,0"
+              End="-121.342866205196,34.0176473269413">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-70.4425449185578,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-70.4425449185578,0"
+                    Point2="-74.4425449185578,0"
+                    Point3="-74.4425449185578,4" />
+                  <mssgle:LineSegment
+                    End="-74.4425449185578,30.0176473269413" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-74.4425449185578,30.0176473269413"
+                    Point2="-74.4425449185578,34.0176473269413"
+                    Point3="-78.4425449185578,34.0176473269413" />
+                  <mssgle:LineSegment
+                    End="-121.342866205196,34.0176473269413" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-143.663931637308,-17.0625,138.4427734375,11.0625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[Row Count Output 1]"
           TopLeft="353.800010473387,378.529412515436">
@@ -15416,42 +15566,44 @@ where [refTable].[MarketSourceCode] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[Lookup Match Output]"
-          TopLeft="351.000001958438,233.247061118617">
+          TopLeft="371.000002299036,225.60000218784">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-178.657143416696,50.9294119684751"
+              EndConnector="-247.942858882339,59.3411767923302"
               Start="0,0"
-              End="-178.657143416696,43.4294119684751">
+              End="-247.942858882339,51.8411767923302">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.4647059842376" />
+                    End="0,25.6705883961651" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.4647059842376"
-                    Point2="0,25.4647059842376"
-                    Point3="-4,25.4647059842376" />
+                    Point1="0,25.6705883961651"
+                    Point2="0,29.6705883961651"
+                    Point3="-4,29.6705883961651" />
                   <mssgle:LineSegment
-                    End="-174.657143416696,25.4647059842376" />
+                    End="-243.942858882339,29.6705883961651" />
                   <mssgle:CubicBezierSegment
-                    Point1="-174.657143416696,25.4647059842376"
-                    Point2="-178.657143416696,25.4647059842376"
-                    Point3="-178.657143416696,29.4647059842376" />
+                    Point1="-243.942858882339,29.6705883961651"
+                    Point2="-247.942858882339,29.6705883961651"
+                    Point3="-247.942858882339,33.6705883961651" />
                   <mssgle:LineSegment
-                    End="-178.657143416696,43.4294119684751" />
+                    End="-247.942858882339,51.8411767923302" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-137.519958427098,30.4647059842376,96.3827734375,11.609375"
+              BoundingBox="-172.16281615992,34.6705883961651,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -15461,32 +15613,34 @@ where [refTable].[MarketSourceCode] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="154.314294667147,27.9882362700664"
+              EndConnector="78.6000076634547,34.8705893077653"
               Start="0,0"
-              End="154.314294667147,20.4882362700664">
+              End="78.6000076634547,27.3705893077653">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,9.99411813503318" />
+                    End="0,13.4352946538826" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,9.99411813503318"
-                    Point2="0,13.9941181350332"
-                    Point3="4,13.9941181350332" />
+                    Point1="0,13.4352946538826"
+                    Point2="0,17.4352946538826"
+                    Point3="4,17.4352946538826" />
                   <mssgle:LineSegment
-                    End="150.314294667147,13.9941181350332" />
+                    End="74.6000076634547,17.4352946538826" />
                   <mssgle:CubicBezierSegment
-                    Point1="150.314294667147,13.9941181350332"
-                    Point2="154.314294667147,13.9941181350332"
-                    Point3="154.314294667147,17.9941181350332" />
+                    Point1="74.6000076634547,17.4352946538826"
+                    Point2="78.6000076634547,17.4352946538826"
+                    Point3="78.6000076634547,21.4352946538826" />
                   <mssgle:LineSegment
-                    End="154.314294667147,20.4882362700664" />
+                    End="78.6000076634547,27.3705893077653" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15520,110 +15674,8 @@ where [refTable].[MarketSourceCode] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[Derived Column Output1]"
-          TopLeft="253.542858541742,304.976473087093">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="35.4571519316453,52.7529394283433"
-              Start="0,0"
-              End="27.9571519316453,52.7529394283433">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="13.7285759658227,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="13.7285759658227,0"
-                    Point2="17.7285759658227,0"
-                    Point3="17.7285759658227,4" />
-                  <mssgle:LineSegment
-                    End="17.7285759658227,48.7529394283433" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17.7285759658227,48.7529394283433"
-                    Point2="17.7285759658227,52.7529394283433"
-                    Point3="21.7285759658227,52.7529394283433" />
-                  <mssgle:LineSegment
-                    End="27.9571519316453,52.7529394283433" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[Derived Column Output]"
-          TopLeft="110.899999063356,157.04117752161">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="240.100002895083,34.6058835970076"
-              Start="0,0"
-              End="240.100002895083,27.1058835970076">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.3029417985038" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.3029417985038"
-                    Point2="0,17.3029417985038"
-                    Point3="4,17.3029417985038" />
-                  <mssgle:LineSegment
-                    End="236.100002895083,17.3029417985038" />
-                  <mssgle:CubicBezierSegment
-                    Point1="236.100002895083,17.3029417985038"
-                    Point2="240.100002895083,17.3029417985038"
-                    Point3="240.100002895083,21.3029417985038" />
-                  <mssgle:LineSegment
-                    End="240.100002895083,27.1058835970076" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_ReadJSONFile.Paths[Conditional Split Default Output]"
-          TopLeft="364.714294667147,110.388236270066">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-177.414295603792,25.8529412515435"
-              Start="0,0"
-              End="-169.914295603792,25.8529412515435">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-84.7071478018958,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-84.7071478018958,0"
-                    Point2="-88.7071478018958,0"
-                    Point3="-88.7071478018958,4" />
-                  <mssgle:LineSegment
-                    End="-88.7071478018958,21.8529412515435" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-88.7071478018958,21.8529412515435"
-                    Point2="-88.7071478018958,25.8529412515435"
-                    Point3="-92.7071478018958,25.8529412515435" />
-                  <mssgle:LineSegment
-                    End="-169.914295603792,25.8529412515435" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-159.321054051896,-17.658203125,141.2278125,11.658203125"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Eleni_Dulla_QuickenLoan"
   DTS:PackageType="5"
-  DTS:VersionBuild="195"
-  DTS:VersionGUID="{28397ADF-318B-45AA-AE45-65E632B62212}">
+  DTS:VersionBuild="201"
+  DTS:VersionGUID="{FBE3635B-2962-439F-B983-B47127876FDD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -125,7 +125,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/20/2020 10:07:07 PM</DTS:VariableValue>
+        DTS:DataType="7">10/6/2020 7:11:38 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -209,7 +209,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/20/2020 10:07:07 PM</DTS:VariableValue>
+        DTS:DataType="7">10/6/2020 7:11:38 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -333,41 +333,20 @@
               <DTS:ObjectData>
                 <ScriptProject
                   Name="ST_ee4271b506764b7fb915c70ebeb5a515"
-                  VSTAMajorVersion="15"
+                  VSTAMajorVersion="3"
                   VSTAMinorVersion="0"
                   Language="CSharp"
                   ReadOnlyVariables="System::PackageName,User::VarFormEmail,User::Varpassword,User::VarSmtpClient,User::VarsmtpServerPort,User::Varsubject,User::VarToEmail"
                   ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
                   <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_ee4271b506764b7fb915c70ebeb5a515")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_ee4271b506764b7fb915c70ebeb5a515")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                    Name="Properties\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -502,7 +481,7 @@ using System.Runtime.CompilerServices;
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ST_ee4271b506764b7fb915c70ebeb5a515</RootNamespace>
     <AssemblyName>ST_ee4271b506764b7fb915c70ebeb5a515</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
     <TargetFrameworkProfile></TargetFrameworkProfile>
@@ -531,8 +510,8 @@ using System.Runtime.CompilerServices;
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=12.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=12.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" />
   </ItemGroup>
   <ItemGroup>
     <AppDesigner Include="Properties\" />
@@ -567,7 +546,7 @@ using System.Runtime.CompilerServices;
         <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
         <Host Name="ScriptTask" />
         <ProjectClient>
-          <HostIdentifier>SSIS_ST150</HostIdentifier>
+          <HostIdentifier>SSIS_ST120</HostIdentifier>
         </ProjectClient>
       </FlavorProperties>
     </VisualStudio>
@@ -724,21 +703,21 @@ namespace ST_ee4271b506764b7fb915c70ebeb5a515
                     Name="Project"
                     Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>ST_ee4271b506764b7fb915c70ebeb5a515</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>ST_ee4271b506764b7fb915c70ebeb5a515</msb:DisplayName>
-    <msb:ProjectId>{AAEA4C0B-72C3-4D42-80EC-2D10D19AFDF0}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_ee4271b506764b7fb915c70ebeb5a515.csproj" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-    <msb:File Include="ScriptMain.cs" />
-  </msb:ItemGroup>
+	<msb:PropertyGroup>
+		<msb:CodeName>ST_ee4271b506764b7fb915c70ebeb5a515</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
+		<msb:DisplayName>ST_ee4271b506764b7fb915c70ebeb5a515</msb:DisplayName>
+		<msb:ProjectId>{65842992-EB80-43E8-AC8C-0C73C48F1B0B}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="ST_ee4271b506764b7fb915c70ebeb5a515.csproj"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="ScriptMain.cs"/>
+	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Settings.Designer.cs"
@@ -770,14 +749,35 @@ namespace ST_ee4271b506764b7fb915c70ebeb5a515.Properties {
     }
 }]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\Settings.settings"
-                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_ee4271b506764b7fb915c70ebeb5a515")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_ee4271b506764b7fb915c70ebeb5a515")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.Designer.cs"
                     Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -849,14 +849,14 @@ namespace ST_ee4271b506764b7fb915c70ebeb5a515.Properties {
                   <BinaryItem
                     Name="ST_ee4271b506764b7fb915c70ebeb5a515.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAIgcWF8AAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAAIjMA
-AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAANAyAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAKO8fF8AAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAAHjMA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMwyAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAKBMAAAAgAAAAFAAAAAIA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAJBMAAAAgAAAAFAAAAAIA
 AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAHgEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAE
-MwAAAAAAAEgAAAACAAUAzCIAAEwPAAABAAAAAAAAABgyAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAA
+MwAAAAAAAEgAAAACAAUAzCIAAEgPAAABAAAAAAAAABQyAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBQD3AQAAAQAAEQIoEAAACm8RAAAKcgEAAHBvEgAACm8T
 AAAKbxQAAAoKAigQAAAKbxEAAApyIwAAcG8SAAAKbxMAAApvFAAACgsCKBAAAApvEQAACnJJAABw
 bxIAAApvEwAACm8UAAAKDB2NHQAAASUWAigQAAAKbxEAAApyawAAcG8SAAAKbxMAAApvFAAACqIl
@@ -870,7 +870,7 @@ AAAKKCQAAAom3gACKBAAAAoWbyUAAAoqAAEQAAAAAHQBad0BDRAAAAEeAigmAAAKKh4CKCcAAAoq
 rn4BAAAELR5yxwEAcNADAAACKCgAAApvKQAACnMqAAAKgAEAAAR+AQAABCoafgIAAAQqHgKAAgAA
 BCoafgMAAAQqHgIoKwAACioucwgAAAaAAwAABCoAAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5
 AAAAAAUAbAAAAHQEAAAjfgAA4AQAAHgGAAAjU3RyaW5ncwAAAABYCwAAPAIAACNVUwCUDQAAEAAA
-ACNHVUlEAAAApA0AAKgBAAAjQmxvYgAAAAAAAAACAAABVx2iAQkDAAAA+gEzABYAAAEAAAAoAAAA
+ACNHVUlEAAAApA0AAKQBAAAjQmxvYgAAAAAAAAACAAABVx2iAQkDAAAA+gEzABYAAAEAAAAoAAAA
 BQAAAAYAAAAJAAAAAQAAACsAAAACAAAAEAAAAAEAAAACAAAAAwAAAAQAAAABAAAABQAAAAEAAAAB
 AAAAAAC4AwEAAAAAAAYARgLGBAYA1QLGBAYAkgGzBA8AOgUAAAYAvwFNBAYAKQJNBAYACgJNBAYA
 vAJNBAYAZgJNBAYAfwJNBAYA1gFNBAYA8QEDAwoAmgJFAwoACwFFAw4AfQCoAwYAdQT3AwYABwT3
@@ -888,8 +888,8 @@ AI8FXQD5AOADZAD5AGgAaQAhAVIGbwDRABwGAQBxAKYEBgCZAKYEBgAxAaQAdgAxAWsGfwChAKYE
 hQDBAKYEBgAIABQAnwAIABgApAApAHMADAEuAAsA5AAuABMA7QAuABsADAEuACMAFQEuACsAPgEu
 ADMAPgEuADsAPgEuAEMAFQEuAEsARAEuAFMAPgEuAFsAWwFDAGMApABJAHMADAFhAHsApABjAGsA
 pAAbAAMAAQAEAAMAAACWBNUAAAADAdoAAAAHBt8AAgAEAAMAAgAFAAUAAQAGAAUAAgAHAAcABIAA
-AAEAAACEHWSNAAAAAAAABwAAAAQAAAAAAAAAAAAAAI0AWwAAAAAADwAAAAAAAAAAAAAAlgAmAwAA
-AAAEAAAAAAAAAAAAAACNAPcDAAAAAA8AAAAAAAAAAAAAAJYANAAAAAAABAAAAAAAAAAAAAAAjQCf
+AAEAAACgHXFoAAAAAAAABwAAAAQAAAAAAAAAAAAAAI0AWwAAAAAADAAAAAAAAAAAAAAAlgAmAwAA
+AAAEAAAAAAAAAAAAAACNAPcDAAAAAAwAAAAAAAAAAAAAAJYANAAAAAAABAAAAAAAAAAAAAAAjQCf
 BQAAAAAAAAAAAQAAAPcEAAAFAAIAAAAAAABJbnQzMgBTVF9lZTQyNzFiNTA2NzY0YjdmYjkxNWM3
 MGViZWI1YTUxNQA8TW9kdWxlPgBNaWNyb3NvZnQuU3FsU2VydmVyLk1hbmFnZWREVFMAdmFsdWVf
 XwBtc2NvcmxpYgBBZGQAU2VuZABkZWZhdWx0SW5zdGFuY2UATWFpbE1lc3NhZ2UAVmFyaWFibGUA
@@ -929,33 +929,33 @@ ACNVAHMAZQByADoAOgBWAGEAcgBwAGEAcwBzAHcAbwByAGQAAC9VAHMAZQByADoAOgBWAGEAcgBz
 AG0AdABwAFMAZQByAHYAZQByAFAAbwByAHQAADdFAG0AYQBpAGwAIAB3AGEAcwAgAHMAdQBjAGMA
 ZQBzAHMAZgB1AGwAbAB5ACAAUwBlAG4AdAAAcVMAVABfAGUAZQA0ADIANwAxAGIANQAwADYANwA2
 ADQAYgA3AGYAYgA5ADEANQBjADcAMABlAGIAZQBiADUAYQA1ADEANQAuAFAAcgBvAHAAZQByAHQA
-aQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAAAAH2d2hoo6cUaL+d6CkVx1kQAEIAEBCAMgAAEF
+aQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAAAAB/2306T7VUW5DIfqlPFIGgAEIAEBCAMgAAEF
 IAEBEREEIAEBDgUgAQERWQsHCA4ODg4ODggSPQQgABJpBCAAEm0FIAEScRwDIAAcAyAADgUAAQ4d
 DgQAAQgOBSAAEoCBBiABARKAhQUgAgEODgYgAQESgI0EIAEBAgUgAQESPQYAARGAlQ4IAAESgJkR
 gJ0FIAASgKEHIAIBDhKAoQi3elxWGTTgiQiJhF3NgIDMkQQAAAAABAEAAAADBhJRAwYSVQMGEhAC
 BggDBhEUBAAAElEEAAASVQUAAQESVQQAABIQAwAAAQQIABJRBAgAElUECAASEAgBAAgAAAAAAB4B
 AAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU1RfZWU0MjcxYjUwNjc2
-NGI3ZmI5MTVjNzBlYmViNWE1MTUAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyMAAASQEAGi5O
-RVRGcmFtZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZy
-YW1ld29yayA0LjcAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VS
-ZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGlj
-S2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJj
-ZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA+DIAAAAAAAAAAAAAEjMAAAAgAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAQzAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAA
-EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+NGI3ZmI5MTVjNzBlYmViNWE1MTUAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyMAAARwEAGi5O
+RVRGcmFtZXdvcmssVmVyc2lvbj12NC4wAQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRAuTkVUIEZy
+YW1ld29yayA0ALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRl
+ciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlU
+b2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0
+AgAAAAAAAAAAAAAAUEFEUEFEULQAAAD0MgAAAAAAAAAAAAAOMwAAACAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAADMAAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
 SAAAAFhAAAAaBAAAAAAAAAAAAAAaBDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
-AAAAvQTv/gAAAQAAAAEAZI2EHQAAAQBkjYQdPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAAAvQTv/gAAAQAAAAEAcWigHQAAAQBxaKAdPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
 AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
 AAAAAAAAALAEegMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAVgMAAAEAMAAwADAA
 MAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBu
 AHkATgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAA
 AABTAFQAXwBlAGUANAAyADcAMQBiADUAMAA2ADcANgA0AGIANwBmAGIAOQAxADUAYwA3ADAAZQBi
 AGUAYgA1AGEANQAxADUAAAA+AA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4A
-NwA1ADUANgAuADMANgAxADkANgAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABT
+NwA1ADgANAAuADIANgA3ADMANwAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABT
 AFQAXwBlAGUANAAyADcAMQBiADUAMAA2ADcANgA0AGIANwBmAGIAOQAxADUAYwA3ADAAZQBiAGUA
 YgA1AGEANQAxADUALgBkAGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAA
 AEMAbwBwAHkAcgBpAGcAaAB0ACAAQAAgACAAMgAwADIAMAAAACoAAQABAEwAZQBnAGEAbABUAHIA
@@ -964,15 +964,15 @@ AG0AZQAAAFMAVABfAGUAZQA0ADIANwAxAGIANQAwADYANwA2ADQAYgA3AGYAYgA5ADEANQBjADcA
 MABlAGIAZQBiADUAYQA1ADEANQAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBl
 AAAAAABTAFQAXwBlAGUANAAyADcAMQBiADUAMAA2ADcANgA0AGIANwBmAGIAOQAxADUAYwA3ADAA
 ZQBiAGUAYgA1AGEANQAxADUAAABCAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAx
-AC4AMAAuADcANQA1ADYALgAzADYAMQA5ADYAAAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAgAFYA
-ZQByAHMAaQBvAG4AAAAxAC4AMAAuADcANQA1ADYALgAzADYAMQA5ADYAAAAAAAAAAAAAAAAAAAAA
+AC4AMAAuADcANQA4ADQALgAyADYANwAzADcAAAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAgAFYA
+ZQByAHMAaQBvAG4AAAAxAC4AMAAuADcANQA4ADQALgAyADYANwAzADcAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAJDMAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAIDMAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -15775,6 +15775,22 @@ where [refTable].[MarketSourceCode] = ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{8826B983-D98B-466F-A1F6-C4CC816E6085}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{64AC28E7-8EE9-4EE6-A3AE-328081BAB915}"
+          SQLTask:SqlStatementSource="if exists&#xA;(select 1&#xA; From [dbo].[Stg_Eleni_Dulla_QL]&#xA;Where InsuranceCompany IS NULL&#xA; )&#xA; begin&#xA;Insert into [MortgageInsuranceCompanyCrossWalkReference] ( [MortgageInsuranceCompany], [Insurance_Company] )&#xA;Select DISTINCT MortgageInsuranceCompany,&#xA; MortgageInsuranceCompany   as InsuranceCompany&#xA;From [Stg_Eleni_Dulla_QL]&#xA;Where InsuranceCompany IS NULL&#xA;end" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Execute SQL Task_DeletStgTable"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -15959,7 +15975,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{1F878377-FF5B-4272-AA05-5D35B8B516B7}"
+      DTS:DTSID="{ADDFCB40-AAEE-406B-86B2-0357D9A6858A}"
       DTS:From="Package\Data Flow Task_QuickenLoan_Salesforce"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -15980,6 +15996,14 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\Data Flow Task_QuickenLoan_Salesforce" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{0C24834B-1109-4DFE-BBE2-B4B48F32ED6E}"
+      DTS:From="Package\Run_Log"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Execute SQL Task" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
@@ -16082,7 +16106,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:ObjectData>
             <ScriptProject
               Name="ST_c828d5702a484f2089b343be8e492ed3"
-              VSTAMajorVersion="15"
+              VSTAMajorVersion="3"
               VSTAMinorVersion="0"
               Language="CSharp" />
           </DTS:ObjectData>
@@ -16105,43 +16129,47 @@ where [refTable].[MarketSourceCode] = ?</property>
 <!--If you manually edit this section and make a mistake, you can delete it. -->
 <!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
-  Version="8">
+  Version="sql12">
   <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="270.4,41.6"
           Id="Package\Data Flow Task_QuickenLoan_Salesforce"
-          TopLeft="113.571430505539,269.941180256411" />
+          TopLeft="140.714288110636,277.588239187188" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="187.857146056331,446.588241557349" />
         <NodeLayout
           Size="234.4,41.6"
           Id="Package\Execute SQL Task_DeletStgTable"
-          TopLeft="91.9285723895443,129.500001276241" />
+          TopLeft="156.928573496488,168.500001823201" />
         <NodeLayout
           Size="249.6,41.6"
           Id="Package\Execute SQL Task_MaxModifiedDate"
-          TopLeft="26.9285717934983,37.5588239369508" />
+          TopLeft="141.214288025487,48.2647064400379" />
         <NodeLayout
           Size="156.8,41.6"
           Id="Package\Run_Log"
-          TopLeft="175.714288706682,388.470593683448" />
+          TopLeft="194.28571759438,369.352946356507" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="251.44285960611,311.541180256411">
+          TopLeft="274.300002852508,319.188239187188">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,76.9294134270365"
+              EndConnector="0,50.1647071693188"
               Start="0,0"
-              End="0,69.4294134270365">
+              End="0,42.6647071693188">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,69.4294134270365" />
+                    End="0,42.6647071693188" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16152,30 +16180,30 @@ where [refTable].[MarketSourceCode] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="151.728571793498,79.1588239369508">
+          TopLeft="266.014288025487,89.8647064400379">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="57.400000596046,50.3411773392897"
+              EndConnector="8.1142854710011,78.6352953831633"
               Start="0,0"
-              End="57.400000596046,42.8411773392897">
+              End="8.1142854710011,71.1352953831633">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.1705886696449" />
+                    End="0,35.3176476915817" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.1705886696449"
-                    Point2="0,25.1705886696449"
-                    Point3="4,25.1705886696449" />
+                    Point1="0,35.3176476915817"
+                    Point2="0,39.3176476915817"
+                    Point3="4,39.3176476915817" />
                   <mssgle:LineSegment
-                    End="53.400000596046,25.1705886696449" />
+                    End="4.1142854710011,39.3176476915817" />
                   <mssgle:CubicBezierSegment
-                    Point1="53.400000596046,25.1705886696449"
-                    Point2="57.400000596046,25.1705886696449"
-                    Point3="57.400000596046,29.1705886696449" />
+                    Point1="4.1142854710011,39.3176476915817"
+                    Point2="8.1142854710011,39.3176476915817"
+                    Point3="8.1142854710011,43.3176476915817" />
                   <mssgle:LineSegment
-                    End="57.400000596046,42.8411773392897" />
+                    End="8.1142854710011,71.1352953831633" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16186,30 +16214,40 @@ where [refTable].[MarketSourceCode] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="209.128572389544,171.100001276241">
+          TopLeft="275.021430803562,210.100001823201">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="39.6428581159945,98.8411789801704"
+              EndConnector="0,67.4882373639863"
               Start="0,0"
-              End="39.6428581159945,91.3411789801704">
+              End="0,59.9882373639863">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.4205894900852" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,45.4205894900852"
-                    Point2="0,49.4205894900852"
-                    Point3="4,49.4205894900852" />
+                    End="0,59.9882373639863" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="270.871431825356,410.952946356507">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.6352952008422"
+              Start="0,0"
+              End="0,28.1352952008422">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="35.6428581159945,49.4205894900852" />
-                  <mssgle:CubicBezierSegment
-                    Point1="35.6428581159945,49.4205894900852"
-                    Point2="39.6428581159945,49.4205894900852"
-                    Point3="39.6428581159945,53.4205894900852" />
-                  <mssgle:LineSegment
-                    End="39.6428581159945,91.3411789801704" />
+                    End="0,28.1352952008422" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

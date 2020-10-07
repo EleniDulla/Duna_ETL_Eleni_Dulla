@@ -3,6 +3,8 @@
   DTS:ObjectName="DESKTOP-62UHNOD.SimpleNexus 1"
   DTS:DTSID="{A3E2B0BC-33C1-460F-8206-F55A93BD1CA0}"
   DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::DESKTOP62UHNODSimpleNexus1_ConnectionString]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectionString="Data Source=DESKTOP-62UHNOD;Initial Catalog=SimpleNexus;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />

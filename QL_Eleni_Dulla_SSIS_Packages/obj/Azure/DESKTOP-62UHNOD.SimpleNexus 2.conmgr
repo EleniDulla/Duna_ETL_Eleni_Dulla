@@ -1,10 +1,8 @@
 <?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="DESKTOP-62UHNOD.SimpleNexus"
-  DTS:DTSID="{52A66158-4F7A-4C0D-B097-3B16D73B0DA3}"
+  DTS:ObjectName="DESKTOP-62UHNOD.SimpleNexus 2"
+  DTS:DTSID="{A8FD2253-C93E-4D07-BD3E-4C431F94F5C8}"
   DTS:CreationName="OLEDB">
-  <DTS:PropertyExpression
-    DTS:Name="ConnectionString">@[$Project::DESKTOP62UHNODSimpleNexus_ConnectionString]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectionString="Data Source=DESKTOP-62UHNOD;Initial Catalog=SimpleNexus;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />

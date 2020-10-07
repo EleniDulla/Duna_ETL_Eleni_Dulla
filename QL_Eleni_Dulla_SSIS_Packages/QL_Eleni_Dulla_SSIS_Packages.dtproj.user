@@ -8,6 +8,8 @@
         <UseWinAuth>false</UseWinAuth>
         <WinAuthUserName />
         <WinAuthDomain />
+        <ServerName>DESKTOP-62UHNOD\DUNATEST</ServerName>
+        <PathOnServer>/SSISDB/QL_Eleni_Dulla_ETL/QL_Eleni_Dulla_SSIS_Packages</PathOnServer>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>
