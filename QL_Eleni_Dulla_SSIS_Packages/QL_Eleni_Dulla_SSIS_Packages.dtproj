@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-62UHNOD</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAACAAAAAAAQZgAAAAEAACAAAADbK0H50dATupQcaeOcW+Or0Hvz7NwHQv1Kbk7fdDi/OwAAAAAOgAAAAAIAACAAAABgXtDNBCRPDmCqHblOD90tplUUWcgeEPvqIH0Qu76fNJAAAADe/92k326lyvZGWjRf9mG5HnX3mBDacPMahl8TFcVhLXcb8jtS2qRRfKbdY7QLoC9RPMLxBzvQ4KDi/iokFE4Ap0fCqYyt6WfGyW9ScGYeXmfWUyWXC841Yt6HGihzkzPWFgKuG+qGHW8B/yf598boZ2qQYAUXCYOFUI9YJujhvsQ77OHMdMoLuAmXZ8M5kEhAAAAAHm/G5W2xQPMf/7aDxuxd4L+KgOJNY3PIxbeekWhj3iOCdnV+dRKqLA8S5xgVEMCOJ96Jcsz+QwNTQeiTKp8xhA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAACAAAAAAAQZgAAAAEAACAAAAB/Q0JlxH6+os3XtOYnVkfSLdT1sr4msQw3gIcVYapkHwAAAAAOgAAAAAIAACAAAAADFlPWYWpuKaCo3olNm4T+Eq05ALoclHFn/W5Ki8MobJAAAADxyCDD0kycubJlAphDgDpUl2a7Qe5Yk2LW179wMDmzl6ng+ZDI6F0r3dwY5Q0Zp9uqF7CJHyej7FoZtQOqHKk1yUVdARBubvRVbCag0vlym1Iwfxrf7Qaj2ohKb0N5xAOOQuVZ4nmQzdsH0cS8Yvvq2GM65Jy1liTNZCMSnimEC3XwHp6XnDYPuTFVgJX+AWBAAAAA3hLqTfaH9SDP8NoO+iBFJJIRLMZnCbR61Hcu4bK+h68TWQB9ykdQzZeFNFtRTDSdLS1wEFILpTzYTf+9mb1dIg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -940,7 +940,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0NjUwMTQ4MzAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQ2NTg3ODgzMzk0MDE3NSwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsYTYyNzgxOWYtNjAyZS0wMDAwLTQ3MzQtNjdkMjA4MmNkMDNhLGE2Mjc4MTlmLTYwMmUtMDAwMC00NzM0LTY3ZDIwODJjZDAzYSwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxOZ2VjankxbTJIZEF5WmxNbXdPSXBxR1YxemtBSXNXRC9DS1RHVHBGNTFIWi9XS2tYWlJSZjZ2YmRKbmZ1bnpRendHOTZ6cDZsZFhhNG9Xb2EwcnZmdXh5bzJSYWRWbGhzWlhUbUsyTzBVZzJBNGl5dklDdi84WHFvaTdPQjMvRGtnbjRVK2QxeU9IOW5qakE1blRUZTNuMmdDNmk4ZUxuZDhLdTNpcXh1ZFlPOFFsLzhCeVAvMnprWDJST0JGbkZCNnY2OHN3UW9CeUtxaU1rVHFmMjgxRXdhL0pFTFRYbDJhMnBST1c3K01HT3lTRThhSTZvMU5qVy9oRW01UzhnUFB4dmdPNXc0QXpLSXBzQmEvVjVmWlhiKy9JUlpmTHNOL0FFdlhkRE1ucGdDazJHempTOWhXTkhRdzZYdkVuSUN2WHhYejJFejZDaUduRWZnWVhjV2c9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=True;Max Received Message Size=4398046511104</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0NjY5NTM3MjAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQ2NzgxNzcyOTA2MzY5NiwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsYTNkNDdkMDUtOWE4Yy00YWMwLTg1OWYtYjEwNmQyM2RlOGJmLGEzZDQ3ZDA1LTlhOGMtNGFjMC04NTlmLWIxMDZkMjNkZThiZiwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxXMzhyanZ6cEI0WkQzT1ptM282WXhOZUExN0JhUGdDNjg1aFcyZzg4VCtSRTJJN2M2LzZQZWY2Q3VCMW12b21oTytQRk1RQjFmMnVqMy9XNWFrOFdPZVg4bjdqYy9CVGVZREtwcTVCVFc5cHIzd1VoMUpvTkNGSkhsbEg4SDdaM1BjMDFqUmRTM1FuT25LNjhMZm02VysxaHB3Z01VRlE3OSttaDgrQ1JnN1hwdmtjRktTcjl4UFhTSi9TQ3NWbjY0M3FpWEhDVFhWVkNpK2xrbWZjRVRCTENjZGVXYkRsZklBQk9RWFhkNUlaeXlDRE9wSHZSaWhzUjh6cm1kT2IrekF5ZlMraDJ1QTdoQVVNV0tYSVJRVXFEb0FIelM2UFlWMzFVOTExZ05JdVVNd3FoVkxUM1kwQzVGVDBtZW5TaHNzUlgwd2lpWkdDN1B6M295U1VxbGc9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=True;Max Received Message Size=4398046511104</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -1012,10 +1012,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Eleni_Dulla_LendingQB</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">214</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">245</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{BD0A0D24-829E-4E27-A213-94DC62996ED2}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{CD4FE267-9A50-4B54-A52D-078ACEEC3784}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1489,10 +1489,10 @@
                 <SSIS:Property SSIS:Name="Name">Eleni_Dulla_QuickenLoan</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">200</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">203</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{A0D46D8B-FE9C-4B43-AE27-57EC266B26A6}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{F022FB66-90FB-4E76-9893-C897E775C742}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1924,6 +1924,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1965,10 +1967,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Eleni_Dulla_SimpleNexus</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">421</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">423</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{703C744A-3B06-4AB7-BFDE-922AFF8611F9}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{78E7D13F-9F64-4AFC-8DBB-C9610EB03CAB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2400,6 +2402,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2456,10 +2460,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Eleni_Dulla_LeandingPad</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">373</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">378</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{2FF3B17A-EA83-4394-871E-AE525C465C03}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{AA6CDFD4-391A-4A99-B4CE-57E30A0E75AC}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2891,6 +2895,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2947,10 +2953,10 @@
                 <SSIS:Property SSIS:Name="Name">Package2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">58</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">62</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{DCB597B8-3C8D-41D6-86B9-6529A16F369A}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E644A238-3B32-468D-BFF9-90C1CE78A33F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -3082,10 +3088,10 @@
                 <SSIS:Property SSIS:Name="Name">Eleni_Dulla_QuickenLoan</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">227</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">231</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F0BAA877-4791-4046-93A7-790402964C2F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{703D7146-77CC-4E73-A1F5-E5A89CFA48A6}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -3865,7 +3871,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">150</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">120</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

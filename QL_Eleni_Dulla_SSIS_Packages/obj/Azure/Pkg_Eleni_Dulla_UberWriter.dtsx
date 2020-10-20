@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Eleni_Dulla_QuickenLoan"
   DTS:PackageType="5"
-  DTS:VersionBuild="228"
-  DTS:VersionGUID="{3999AFB4-9E94-4375-8459-2B64FC8A4A4C}">
+  DTS:VersionBuild="231"
+  DTS:VersionGUID="{703D7146-77CC-4E73-A1F5-E5A89CFA48A6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -98,10 +98,10 @@
           ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True">
           <Password
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACaIsMhyyktXsD/bJar4ldTEoKlcicbfg+JeL/dPPNkJQAAAAAOgAAAAAIAACAAAAAtToTWol4rP6iRRV4i5+/zWKom9BhyR0aaVBmmsZZx+CAAAACRqcVrQcHoJLUSqOQ+gfmzYxsy0zZ/k5z6Nv9ftwzVzUAAAAB76YVOS02iRh5XyazusQM2uUJmV8HXH5jru5TcnuFeR4SSRWtWcexs8OONQXgCU3OTzO1Mm4gXtTwZh56fMFYc</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACHQwf8FmB88WQuNpwnYNHzi6BXco9lb3QXsDpv5GJonQAAAAAOgAAAAAIAACAAAADWZbRX3Kla1ZJp5mC2ygJC2VGr1X7wUlbsM8I7MFxa8CAAAABzJwVGKdMn8AJ/2ZQLzRybeR1VXEA+vyiBFUkFLIgyPkAAAABa5Ctq2rk/MSctfaW8K5jkSw72IoLWJZti2ESbyDe6AuwsTG98rIcAu2rmzlh0eo3b37DaiNi8bd+RfRCtkKai</Password>
           <SecurityToken
             Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADgepptooRi6yFxWNqD84iGP8Fmz9oDiKypik5+MQYnDwAAAAAOgAAAAAIAACAAAADInaVOt5/Ze6gbEdNWdWQY513JY45NufGyr8Ncx8vRFkAAAACfNcz/kNFysMF1jdiPvcN6JRnC6Zb8Fl3Wpu6KJuTU0utKDCblcjbFJ1YooW/fgQTr2ci4QZblTkuNFb9o9fpKQAAAAM148nZzcbxqZLbv9M0dF2NsCKAXhm99ZrRMCTtOcTkTj6Qlw8/bzOkgHx4N4ZvcDBpt6QqVgqrhCcRJXjdmWLM</SecurityToken>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACdTMT7qllg6VcdYP7a0BVhTAHS7dXAMSaNWTKs3KNGvwAAAAAOgAAAAAIAACAAAAAFXGt45bX8exPz+RAPC+yfUORxzM5u50Nf3VTkM9nTq0AAAAD8fthbtMp9v0rcB0z2mTZGQ9ML16nefPdLvNDLBNIC0rMQcqmKHDNobRY1/HTD8bBrRR4ROMaQAEDBHJVNxtwxQAAAAKlEnf1hod89fCKGPAH8nscsm1CGJrxs72mxOhm8VzsmDbHSmgOMqM+U8E7/zltxQKJKDBWcfMvrtuqT7A2iOp8</SecurityToken>
         </SalesforceConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -145,7 +145,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">10/6/2020 11:35:56 PM</DTS:VariableValue>
+        DTS:DataType="7">10/9/2020 1:49:09 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -229,7 +229,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">10/6/2020 11:35:56 PM</DTS:VariableValue>
+        DTS:DataType="7">10/9/2020 1:49:09 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -359,14 +359,35 @@
                   ReadOnlyVariables="System::PackageName,User::VarFormEmail,User::Varpassword,User::VarSmtpClient,User::VarsmtpServerPort,User::Varsubject,User::VarToEmail"
                   ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
                   <ProjectItem
-                    Name="Properties\Settings.settings"
-                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_ee4271b506764b7fb915c70ebeb5a515")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_ee4271b506764b7fb915c70ebeb5a515")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -769,35 +790,14 @@ namespace ST_ee4271b506764b7fb915c70ebeb5a515.Properties {
     }
 }]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_ee4271b506764b7fb915c70ebeb5a515")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_ee4271b506764b7fb915c70ebeb5a515")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                    Name="Properties\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.Designer.cs"
                     Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -15568,6 +15568,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task_DeletStgTable"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{22885B99-ED63-46DB-BBDC-39E4D244C678}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -15577,7 +15578,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{86D86AED-0D79-4B1A-959C-B7DA07EE94FA}"
-          SQLTask:SqlStatementSource="DELETE FROM Stg_Eleni_Dulla_QL" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="DELETE FROM Stg_Eleni_Dulla_QL&#xA;WHERE Sourcename = 'UrberWriter'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -15970,26 +15971,26 @@ where [refTable].[MarketSourceCode] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="57.400000596046,50.3411773392897"
+              EndConnector="57.400000596046,50.3411773392902"
               Start="0,0"
-              End="57.400000596046,42.8411773392897">
+              End="57.400000596046,42.8411773392902">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.1705886696449" />
+                    End="0,21.1705886696451" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.1705886696449"
-                    Point2="0,25.1705886696449"
-                    Point3="4,25.1705886696449" />
+                    Point1="0,21.1705886696451"
+                    Point2="0,25.1705886696451"
+                    Point3="4,25.1705886696451" />
                   <mssgle:LineSegment
-                    End="53.400000596046,25.1705886696449" />
+                    End="53.400000596046,25.1705886696451" />
                   <mssgle:CubicBezierSegment
-                    Point1="53.400000596046,25.1705886696449"
-                    Point2="57.400000596046,25.1705886696449"
-                    Point3="57.400000596046,29.1705886696449" />
+                    Point1="53.400000596046,25.1705886696451"
+                    Point2="57.400000596046,25.1705886696451"
+                    Point3="57.400000596046,29.1705886696451" />
                   <mssgle:LineSegment
-                    End="57.400000596046,42.8411773392897" />
+                    End="57.400000596046,42.8411773392902" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
