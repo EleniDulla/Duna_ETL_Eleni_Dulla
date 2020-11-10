@@ -7,11 +7,7 @@
     DTS:Name="ConnectionString">@[$Project::SalesforceConnectionManager1_ConnectionString]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <SalesforceConnectionManager
-      ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True">
-      <Password
-        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAACAAAAAAAQZgAAAAEAACAAAAAR2onB8jVTXeH2F8ry0pnGC+QRu7GF4shvUf2zMiJBsQAAAAAOgAAAAAIAACAAAAD6MufrvyzSoGHOWvydW1jyUw0wcalLgvngvX8pi4jJPmAAAAC3xSfL7D9ckcKnKjuaJGVIr1JxXVLaoOMUXHwcZaQ3CcvB4vlFmxW7mQ9I/LTgQprxhQlF7Hk4YRR/Qys8Sl46nqNPiE34IDykMwV3D/dBRtihzMeUiZBk933FQAHDEydAAAAAJy6JX+1bkFoWZj4PWLAeSaFbQCHXZN1XU01+miNbqvFeOYBzusvVvu3mNxQcfvdm37Cu+brbTi/wtHWE3HFexg==</Password>
-      <SecurityToken
-        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAACAAAAAAAQZgAAAAEAACAAAABn947nxdWSlp0TtH403wJ9dLKXisXS21v6yEEFqlg71QAAAAAOgAAAAAIAACAAAABBAWzritmnLoTMsRKNlw4J35OccJLPYhMtMX3nF6LA4HAAAAAFMYF9YCKcn43iqV3ehhvgLZMKI14jc2sVMkdBknKgPnwHbMm8UgZwmVNRFGPJVzeW/Bj9YzpdUl/AkjOVO84SIQWMtszKmpZWxNjvm6S9Go1U3Hshek8+0mSwO13bKc68RlxbfM33f3dTDZGs8Ni1QAAAABDvDMQyZNEH6q+D4+p3KAwZL51XbB//CcUVVH6cO6ufKWmtKZMtriJNhwDVwLh6hRh1aSxMVZFMvRI3BAYPvXg=</SecurityToken>
-    </SalesforceConnectionManager>
+      ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True"
+      ConnectByProxy="False" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>

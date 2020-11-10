@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-62UHNOD\owner"
   DTS:DTSID="{65892AF2-A441-4A53-8139-D0BE4832135A}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.123"
+  DTS:LastModifiedProductVersion="15.0.2000.132"
   DTS:LocaleID="1033"
   DTS:ObjectName="Eleni_Dulla_QuickenLoan"
   DTS:PackageType="5"
-  DTS:VersionBuild="203"
-  DTS:VersionGUID="{F022FB66-90FB-4E76-9893-C897E775C742}">
+  DTS:VersionBuild="209"
+  DTS:VersionGUID="{64523799-EDC3-470D-AA94-33B2C3E1C29B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -36,6 +36,26 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=DESKTOP-62UHNOD\DUNATEST;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-NIRQ9MH.QlSSISLOG]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0903A6F3-53C5-4423-864D-83FA683ABC5C}"
+      DTS:ObjectName="DESKTOP-NIRQ9MH.QlSSISLOG">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-NIRQ9MH;Initial Catalog=QlSSISLOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C0766FDD-19C5-4544-BD82-2D1CC44D0D26}"
+      DTS:ObjectName="DESKTOP-NIRQ9MH.STGQL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-NIRQ9MH;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -125,7 +145,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">10/9/2020 1:40:57 AM</DTS:VariableValue>
+        DTS:DataType="7">11/4/2020 8:46:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -209,7 +229,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">10/9/2020 1:40:57 AM</DTS:VariableValue>
+        DTS:DataType="7">11/4/2020 8:46:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -12886,8 +12906,8 @@ where [refTable].[MarketSourceCode] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-62UHNOD\DUNATEST.STGQL]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-62UHNOD\DUNATEST.STGQL]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -12966,14 +12986,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFirstName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[UnderwriterFirstName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[UnderwriterLastName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="UnderwriterLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[UnderwriterLastName]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[LeadSourceType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -12995,14 +13007,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="DC_AmortizationType__c"
                       externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
                       lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[DC_AmortizationType__c]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[DC_AnnualPercentageRate__c]"
-                      cachedDataType="numeric"
-                      cachedName="DC_AnnualPercentageRate__c"
-                      cachedPrecision="23"
-                      cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[DC_AnnualPercentageRate__c]" />
                     <inputColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[ApplicationDate__c]"
                       cachedDataType="dbTimeStamp"
@@ -13134,22 +13138,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
                       lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[DC_BottomQualificationRatios__c]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[Channal]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="Channal"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Channal]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[DC_CloserName__c]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="DC_CloserName__c"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[DC_CloserName__c]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[CombinedLoanToValueRatio__c]"
                       cachedDataType="numeric"
                       cachedName="CombinedLoanToValueRatio__c"
@@ -13249,12 +13237,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="FinalDocumentDate__c"
                       externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[FinalDocumentDate__c]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[FundedTire]"
-                      cachedDataType="i4"
-                      cachedName="FundedTire"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[FundedTire]" />
                     <inputColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[DC_FinallCreditScore__c]"
                       cachedDataType="numeric"
@@ -13436,14 +13418,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[QAFailDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[QAFailDate__c]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterName__c]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="DC_UnderwriterName__c"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[DC_UnderwriterName__c]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterRiskAssess__c]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -13577,13 +13551,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[LoanID]"
                       lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[DC_LoanID]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[LoanProcessorName__c]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="LoanProcessorName__c"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanProcessorName__c]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[LoanSetupDate__c]"
                       cachedDataType="dbTimeStamp"
                       cachedName="LoanSetupDate__c"
@@ -13604,14 +13571,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[LoanType]"
                       lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[DC_LoanType__c]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[DC_LoanProcessorName__c]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="DC_LoanProcessorName__c"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[DC_LoanProcessorName__c]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[DC_PropertyOccupancyType__c]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -13619,30 +13578,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="DC_PropertyOccupancyType__c"
                       externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
                       lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[DC_PropertyOccupancyType__c]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[Insurance_Company]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Insurance_Company"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[LoanProcessorFirstName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="LoanProcessorFirstName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanProcessorFirstName]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].Columns[LoanProcessorLastName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="LoanProcessorLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
-                      lineageId="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany.Outputs[Fuzzy Lookup Output].Columns[LoanProcessorLastName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -13656,12 +13591,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="str"
                       length="128"
                       name="AmortizationType" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                      dataType="numeric"
-                      name="AnnualPercentageRate"
-                      precision="23"
-                      scale="10" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
                       dataType="dbTimeStamp"
@@ -13698,7 +13627,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="BorrAddress" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
-                      dataType="dbDate"
+                      dataType="dbTimeStamp"
                       name="BorrBirthDate" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
@@ -13757,23 +13686,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="Channel" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="CloserFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="CloserFullName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
                       codePage="1252"
@@ -13852,10 +13769,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
                       dataType="dbTimeStamp"
                       name="FinalDocumentDate" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
-                      dataType="i4"
-                      name="FundedTier" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
                       dataType="numeric"
@@ -13940,7 +13853,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
                       codePage="1252"
                       dataType="str"
-                      length="132"
+                      length="123"
                       name="LeadId" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
@@ -13988,11 +13901,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="wstr"
                       length="100"
                       name="LoanOfficerFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
-                      dataType="wstr"
-                      length="101"
-                      name="LoanOfficerFullName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                       dataType="wstr"
@@ -14085,29 +13993,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="numeric"
                       name="OriginationFee"
                       precision="27"
-                      scale="13" />
+                      scale="10" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
                       dataType="dbTimeStamp"
                       name="ProcessingDate" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="ProcessorFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="ProcessorFullName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="ProcessorLastName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
                       codePage="1252"
@@ -14120,9 +14010,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="QAFailDate" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
+                      dataType="dbTimeStamp"
                       name="QAStatus" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
@@ -14141,7 +14029,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="numeric"
                       name="TotalFees"
                       precision="27"
-                      scale="13" />
+                      scale="10" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
                       dataType="numeric"
@@ -14155,18 +14043,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="128"
                       name="UnderwriterFirstName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="UnderwriterFullName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="UnderwriterLastName" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
                       codePage="1252"
                       dataType="str"
@@ -14174,14 +14050,97 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="UnderwriterRiskAssess" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
-                      dataType="dbTimeStamp"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
                       name="UnderwritingReceivedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[JSON Source (REST API or File).AnnualPercentageRate]"
+                      dataType="numeric"
+                      name="JSON Source (REST API or File).AnnualPercentageRate"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[Closer_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Closer_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[Loan_Processor_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Loan_Processor_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficer]"
+                      dataType="wstr"
+                      length="101"
+                      name="LoanOfficer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[Underwriter_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Underwriter_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[Derived Column.AnnualPercentageRate]"
+                      dataType="numeric"
+                      name="Derived Column.AnnualPercentageRate"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[Channal]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Channal" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[FudedTire]"
+                      dataType="i4"
+                      name="FudedTire" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[UnderWriterLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="UnderWriterLastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[ProssesorFirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="ProssesorFirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[ProssesorLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="ProssesorLastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[MarketSourceName]"
                       codePage="1252"
                       dataType="str"
                       length="100"
-                      name="InsuranceCompany" />
+                      name="MarketSourceName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Insurance_Company" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[_Similarity]"
+                      dataType="r4"
+                      name="_Similarity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[_Confidence]"
+                      dataType="r4"
+                      name="_Confidence" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan.Inputs[OLE DB Destination Input].ExternalColumns[_Similarity_MortgageInsuranceCompany]"
+                      dataType="r4"
+                      name="_Similarity_MortgageInsuranceCompany" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -15786,7 +15745,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{64AC28E7-8EE9-4EE6-A3AE-328081BAB915}"
+          SQLTask:Connection="{C0766FDD-19C5-4544-BD82-2D1CC44D0D26}"
           SQLTask:SqlStatementSource="if exists&#xA;(select 1&#xA; From [dbo].[Stg_Eleni_Dulla_QL]&#xA;Where InsuranceCompany IS NULL&#xA; )&#xA; begin&#xA;Insert into [MortgageInsuranceCompanyCrossWalkReference] ( [MortgageInsuranceCompany], [Insurance_Company] )&#xA;Select DISTINCT MortgageInsuranceCompany,&#xA; MortgageInsuranceCompany   as InsuranceCompany&#xA;From [Stg_Eleni_Dulla_QL]&#xA;Where InsuranceCompany IS NULL&#xA;end" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -15794,7 +15753,6 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task_DeletStgTable"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{91184C0D-1FE5-43A7-8D70-D7E2DF8D245B}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -15803,7 +15761,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{64AC28E7-8EE9-4EE6-A3AE-328081BAB915}"
+          SQLTask:Connection="{C0766FDD-19C5-4544-BD82-2D1CC44D0D26}"
           SQLTask:SqlStatementSource="DELETE FROM Stg_Eleni_Dulla_QL&#xA;WHERE Sourcename = 'QuickenLoan'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -15819,7 +15777,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{64AC28E7-8EE9-4EE6-A3AE-328081BAB915}"
+          SQLTask:Connection="{C0766FDD-19C5-4544-BD82-2D1CC44D0D26}"
           SQLTask:SqlStatementSource="SELECT MAX(LastModifiedDate) AS MaxLastModifiedDate, SourceName&#xA;    FROM  [dbo].[Stg_Eleni_Dulla_QL]&#xA;WHERE SourceName = ?&#xA;GROUP BY SourceName" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -15924,7 +15882,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       </DTS:EventHandlers>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{558BF96E-B078-432D-986E-C6247352E9F7}"
+          SQLTask:Connection="{C0766FDD-19C5-4544-BD82-2D1CC44D0D26}"
           SQLTask:SqlStatementSource="INSERT INTO [dbo].[QL_Eleni_dulla_ETL_Log]&#xA;VALUES&#xA;(&#xA; ?&#xA;,?&#xA;,?&#xA;,?&#xA;,?&#xA;,?&#xA;,?&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -16326,13 +16284,13 @@ where [refTable].[MarketSourceCode] = ?</property>
           Id="Package\Data Flow Task_QuickenLoan_Salesforce\Fuzzy Lookup_MortgageInsuranceCompany"
           TopLeft="287.657147674171,393.070593501128" />
         <NodeLayout
-          Size="209.6,41.6"
-          Id="Package\Data Flow Task_QuickenLoan_Salesforce\Lookup_MarketSourceName"
-          TopLeft="144.134696291279,232.142860398574" />
-        <NodeLayout
           Size="161.6,41.6"
           Id="Package\Data Flow Task_QuickenLoan_Salesforce\Salesforce Source"
           TopLeft="173.114288621533,7.105427357601E-15" />
+        <NodeLayout
+          Size="209.6,41.6"
+          Id="Package\Data Flow Task_QuickenLoan_Salesforce\Lookup_MarketSourceName"
+          TopLeft="144.134696291279,232.142860398574" />
         <NodeLayout
           Size="213.6,41.6"
           Id="Package\Data Flow Task_QuickenLoan_Salesforce\Derived Column_ReplaceNull"
@@ -16345,110 +16303,6 @@ where [refTable].[MarketSourceCode] = ?</property>
           Size="277.6,41.6"
           Id="Package\Data Flow Task_QuickenLoan_Salesforce\OLE DB Destination_StgTableQuickenLoan"
           TopLeft="29.8000004257474,445.235300305807" />
-        <EdgeLayout
-          Id="Package\Data Flow Task_QuickenLoan_Salesforce.Paths[Derived Column Output1]"
-          TopLeft="218.942858712041,200.658825760152">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="29.991837579238,31.484034638422"
-              Start="0,0"
-              End="29.991837579238,23.984034638422">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,11.742017319211" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.742017319211"
-                    Point2="0,15.742017319211"
-                    Point3="4,15.742017319211" />
-                  <mssgle:LineSegment
-                    End="25.991837579238,15.742017319211" />
-                  <mssgle:CubicBezierSegment
-                    Point1="25.991837579238,15.742017319211"
-                    Point2="29.991837579238,15.742017319211"
-                    Point3="29.991837579238,19.742017319211" />
-                  <mssgle:LineSegment
-                    End="29.991837579238,23.984034638422" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_QuickenLoan_Salesforce.Paths[Derived Column Output]"
-          TopLeft="313.028574858879,361.835297206365">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="116.228572815292,31.2352962947627"
-              Start="0,0"
-              End="116.228572815292,23.7352962947627">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,11.6176481473813" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.6176481473813"
-                    Point2="0,15.6176481473813"
-                    Point3="4,15.6176481473813" />
-                  <mssgle:LineSegment
-                    End="112.228572815292,15.6176481473813" />
-                  <mssgle:CubicBezierSegment
-                    Point1="112.228572815292,15.6176481473813"
-                    Point2="116.228572815292,15.6176481473813"
-                    Point3="116.228572815292,19.6176481473813" />
-                  <mssgle:LineSegment
-                    End="116.228572815292,23.7352962947627" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_QuickenLoan_Salesforce.Paths[BorrFirstName_LastName_NotTest]"
-          TopLeft="286.600002639634,111.20000072928">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-67.657143927593,47.8588250308716"
-              Start="0,0"
-              End="-67.657143927593,40.3588250308716">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.9294125154358" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.9294125154358"
-                    Point2="0,23.9294125154358"
-                    Point3="-4,23.9294125154358" />
-                  <mssgle:LineSegment
-                    End="-63.657143927593,23.9294125154358" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-63.657143927593,23.9294125154358"
-                    Point2="-67.657143927593,23.9294125154358"
-                    Point3="-67.657143927593,27.9294125154358" />
-                  <mssgle:LineSegment
-                    End="-67.657143927593,40.3588250308716" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-110.389958682547,28.9294125154358,153.1227734375,10.7841796875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_QuickenLoan_Salesforce.Paths[Salesforce Source Output]"
           TopLeft="253.914288621533,41.6">
@@ -16525,9 +16379,9 @@ where [refTable].[MarketSourceCode] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-119.057147248424,31.3647068046794"
+              EndConnector="-119.057147248424,31.364706804679"
               Start="0,0"
-              End="-119.057147248424,23.8647068046794">
+              End="-119.057147248424,23.864706804679">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -16538,13 +16392,117 @@ where [refTable].[MarketSourceCode] = ?</property>
                     Point2="-119.057147248424,0"
                     Point3="-119.057147248424,4" />
                   <mssgle:LineSegment
-                    End="-119.057147248424,23.8647068046794" />
+                    End="-119.057147248424,23.864706804679" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_QuickenLoan_Salesforce.Paths[Derived Column Output1]"
+          TopLeft="218.942858712041,200.658825760152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.991837579238,31.484034638422"
+              Start="0,0"
+              End="29.991837579238,23.984034638422">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.742017319211" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.742017319211"
+                    Point2="0,15.742017319211"
+                    Point3="4,15.742017319211" />
+                  <mssgle:LineSegment
+                    End="25.991837579238,15.742017319211" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.991837579238,15.742017319211"
+                    Point2="29.991837579238,15.742017319211"
+                    Point3="29.991837579238,19.742017319211" />
+                  <mssgle:LineSegment
+                    End="29.991837579238,23.984034638422" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_QuickenLoan_Salesforce.Paths[Derived Column Output]"
+          TopLeft="313.028574858879,361.835297206365">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="116.228572815292,31.235296294763"
+              Start="0,0"
+              End="116.228572815292,23.735296294763">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.6176481473815" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.6176481473815"
+                    Point2="0,15.6176481473815"
+                    Point3="4,15.6176481473815" />
+                  <mssgle:LineSegment
+                    End="112.228572815292,15.6176481473815" />
+                  <mssgle:CubicBezierSegment
+                    Point1="112.228572815292,15.6176481473815"
+                    Point2="116.228572815292,15.6176481473815"
+                    Point3="116.228572815292,19.6176481473815" />
+                  <mssgle:LineSegment
+                    End="116.228572815292,23.735296294763" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_QuickenLoan_Salesforce.Paths[BorrFirstName_LastName_NotTest]"
+          TopLeft="286.600002639634,111.20000072928">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-67.657143927593,47.8588250308716"
+              Start="0,0"
+              End="-67.657143927593,40.3588250308716">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.9294125154358" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.9294125154358"
+                    Point2="0,23.9294125154358"
+                    Point3="-4,23.9294125154358" />
+                  <mssgle:LineSegment
+                    End="-63.657143927593,23.9294125154358" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-63.657143927593,23.9294125154358"
+                    Point2="-67.657143927593,23.9294125154358"
+                    Point3="-67.657143927593,27.9294125154358" />
+                  <mssgle:LineSegment
+                    End="-67.657143927593,40.3588250308716" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-110.389958682547,28.9294125154358,153.1227734375,10.7841796875"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

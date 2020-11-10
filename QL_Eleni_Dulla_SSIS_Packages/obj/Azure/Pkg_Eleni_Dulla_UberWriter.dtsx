@@ -8,12 +8,12 @@
   DTS:DelayValidation="True"
   DTS:DTSID="{19291503-E37C-4673-A7DE-D0271F7CCD61}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.123"
+  DTS:LastModifiedProductVersion="15.0.2000.132"
   DTS:LocaleID="1033"
   DTS:ObjectName="Eleni_Dulla_QuickenLoan"
   DTS:PackageType="5"
-  DTS:VersionBuild="231"
-  DTS:VersionGUID="{703D7146-77CC-4E73-A1F5-E5A89CFA48A6}">
+  DTS:VersionBuild="234"
+  DTS:VersionGUID="{97682FF7-485F-479E-97D9-8DE0E61567C0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -37,6 +37,26 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=DESKTOP-62UHNOD\DUNATEST;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-NIRQ9MH.QlSSISLOG]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0F892514-E4F2-47D6-BAC5-5729798F388D}"
+      DTS:ObjectName="DESKTOP-NIRQ9MH.QlSSISLOG">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-NIRQ9MH;Initial Catalog=QlSSISLOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3FF3035C-7A5A-47AE-84E2-BDEAA3325C58}"
+      DTS:ObjectName="DESKTOP-NIRQ9MH.STGQL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-NIRQ9MH;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -86,25 +106,6 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Salesforce Connection Manager]"
-      DTS:CreationName="Salesforce (KingswaySoft)"
-      DTS:DTSID="{2C20A601-2CAC-4811-92D3-3143A0C0413A}"
-      DTS:ObjectName="Salesforce Connection Manager">
-      <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Package::SalesforceConnectionManager_ConnectionString]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <SalesforceConnectionManager
-          ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True">
-          <Password
-            Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACHQwf8FmB88WQuNpwnYNHzi6BXco9lb3QXsDpv5GJonQAAAAAOgAAAAAIAACAAAADWZbRX3Kla1ZJp5mC2ygJC2VGr1X7wUlbsM8I7MFxa8CAAAABzJwVGKdMn8AJ/2ZQLzRybeR1VXEA+vyiBFUkFLIgyPkAAAABa5Ctq2rk/MSctfaW8K5jkSw72IoLWJZti2ESbyDe6AuwsTG98rIcAu2rmzlh0eo3b37DaiNi8bd+RfRCtkKai</Password>
-          <SecurityToken
-            Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/dr+QjTr3EOSdau/EV6oVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACdTMT7qllg6VcdYP7a0BVhTAHS7dXAMSaNWTKs3KNGvwAAAAAOgAAAAAIAACAAAAAFXGt45bX8exPz+RAPC+yfUORxzM5u50Nf3VTkM9nTq0AAAAD8fthbtMp9v0rcB0z2mTZGQ9ML16nefPdLvNDLBNIC0rMQcqmKHDNobRY1/HTD8bBrRR4ROMaQAEDBHJVNxtwxQAAAAKlEnf1hod89fCKGPAH8nscsm1CGJrxs72mxOhm8VzsmDbHSmgOMqM+U8E7/zltxQKJKDBWcfMvrtuqT7A2iOp8</SecurityToken>
-        </SalesforceConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:PackageParameters>
     <DTS:PackageParameter
@@ -145,7 +146,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">10/9/2020 1:49:09 AM</DTS:VariableValue>
+        DTS:DataType="7">11/5/2020 3:57:07 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -229,7 +230,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">10/9/2020 1:49:09 AM</DTS:VariableValue>
+        DTS:DataType="7">11/5/2020 3:57:07 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -359,35 +360,14 @@
                   ReadOnlyVariables="System::PackageName,User::VarFormEmail,User::Varpassword,User::VarSmtpClient,User::VarsmtpServerPort,User::Varsubject,User::VarToEmail"
                   ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
                   <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_ee4271b506764b7fb915c70ebeb5a515")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_ee4271b506764b7fb915c70ebeb5a515")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                    Name="Properties\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.resx"
                     Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -790,14 +770,35 @@ namespace ST_ee4271b506764b7fb915c70ebeb5a515.Properties {
     }
 }]]></ProjectItem>
                   <ProjectItem
-                    Name="Properties\Settings.settings"
-                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_ee4271b506764b7fb915c70ebeb5a515")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_ee4271b506764b7fb915c70ebeb5a515")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                   <ProjectItem
                     Name="Properties\Resources.Designer.cs"
                     Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -12279,8 +12280,8 @@ where [refTable].[MarketSourceCode] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-62UHNOD\DUNATEST.STGQL]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-62UHNOD\DUNATEST.STGQL]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -12581,14 +12582,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
                       lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[DC_AmortizationType]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_AnnualPercentageRate]"
-                      cachedDataType="numeric"
-                      cachedName="DC_AnnualPercentageRate"
-                      cachedPrecision="23"
-                      cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[DC_AnnualPercentageRate]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_ApraisedValue]"
                       cachedDataType="numeric"
                       cachedName="DC_ApraisedValue"
@@ -12681,20 +12674,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedScale="10"
                       externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
                       lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[DC_BottomQualificationRatios]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Channal]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="225"
-                      cachedName="Channal"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Channal]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FudedTire]"
-                      cachedDataType="i4"
-                      cachedName="FudedTire"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[FudedTire]" />
                     <inputColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_FinallCreditScore]"
                       cachedDataType="numeric"
@@ -12912,14 +12891,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
                       lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[DC_TotalLoanAmt]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnderWriterLastName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="UnderWriterLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[UnderWriterLastName]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnderwriterFirstName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -12927,22 +12898,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="UnderwriterFirstName"
                       externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFirstName]"
                       lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[UnderwriterFirstName]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_Underwriter_Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="DC_Underwriter_Name"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[DC_Underwriter_Name]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Insurance_Company]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Insurance_Company"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
                     <inputColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanOfficerFirstName]"
                       cachedDataType="wstr"
@@ -12957,13 +12912,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="LoanOfficerLastName"
                       externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                       lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerLastName]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficer]"
-                      cachedDataType="wstr"
-                      cachedLength="101"
-                      cachedName="DC_LoanOfficer"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[DC_LoanOfficer]" />
                     <inputColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CloserFirstName]"
                       cachedCodepage="1252"
@@ -12997,14 +12945,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
                       lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[DC_UnderwriterRiskAssess]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_Closer_Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="DC_Closer_Name"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[DC_Closer_Name]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_officeID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -13012,30 +12952,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="DC_officeID"
                       externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OfficeID]"
                       lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[DC_officeID]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProssesorFirstName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="ProssesorFirstName"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[ProssesorFirstName]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DC_LoanProcesserName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="DC_LoanProcesserName"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[DC_LoanProcesserName]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProssesorLastName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="ProssesorLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
-                      lineageId="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[ProssesorLastName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -13049,12 +12965,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="str"
                       length="128"
                       name="AmortizationType" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                      dataType="numeric"
-                      name="AnnualPercentageRate"
-                      precision="23"
-                      scale="10" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
                       dataType="dbTimeStamp"
@@ -13091,7 +13001,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="BorrAddress" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
-                      dataType="dbDate"
+                      dataType="dbTimeStamp"
                       name="BorrBirthDate" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
@@ -13150,23 +13060,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="Channel" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="CloserFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="CloserFullName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
                       codePage="1252"
@@ -13245,10 +13143,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
                       dataType="dbTimeStamp"
                       name="FinalDocumentDate" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
-                      dataType="i4"
-                      name="FundedTier" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
                       dataType="numeric"
@@ -13333,7 +13227,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
                       codePage="1252"
                       dataType="str"
-                      length="132"
+                      length="123"
                       name="LeadId" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
@@ -13381,11 +13275,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="wstr"
                       length="100"
                       name="LoanOfficerFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
-                      dataType="wstr"
-                      length="101"
-                      name="LoanOfficerFullName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                       dataType="wstr"
@@ -13478,29 +13367,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="numeric"
                       name="OriginationFee"
                       precision="27"
-                      scale="13" />
+                      scale="10" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
                       dataType="dbTimeStamp"
                       name="ProcessingDate" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="ProcessorFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="ProcessorFullName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="ProcessorLastName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
                       codePage="1252"
@@ -13513,9 +13384,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="QAFailDate" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
+                      dataType="dbTimeStamp"
                       name="QAStatus" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
@@ -13534,7 +13403,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="numeric"
                       name="TotalFees"
                       precision="27"
-                      scale="13" />
+                      scale="10" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
                       dataType="numeric"
@@ -13548,18 +13417,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="128"
                       name="UnderwriterFirstName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="UnderwriterFullName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="UnderwriterLastName" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
                       codePage="1252"
                       dataType="str"
@@ -13567,14 +13424,97 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="UnderwriterRiskAssess" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
-                      dataType="dbTimeStamp"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
                       name="UnderwritingReceivedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JSON Source (REST API or File).AnnualPercentageRate]"
+                      dataType="numeric"
+                      name="JSON Source (REST API or File).AnnualPercentageRate"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Closer_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Closer_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Loan_Processor_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Loan_Processor_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficer]"
+                      dataType="wstr"
+                      length="101"
+                      name="LoanOfficer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Underwriter_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Underwriter_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Derived Column.AnnualPercentageRate]"
+                      dataType="numeric"
+                      name="Derived Column.AnnualPercentageRate"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channal]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Channal" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FudedTire]"
+                      dataType="i4"
+                      name="FudedTire" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderWriterLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="UnderWriterLastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProssesorFirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="ProssesorFirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProssesorLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="ProssesorLastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketSourceName]"
                       codePage="1252"
                       dataType="str"
                       length="100"
-                      name="InsuranceCompany" />
+                      name="MarketSourceName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Insurance_Company" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_Similarity]"
+                      dataType="r4"
+                      name="_Similarity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_Confidence]"
+                      dataType="r4"
+                      name="_Confidence" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_UberWriter\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_Similarity_MortgageInsuranceCompany]"
+                      dataType="r4"
+                      name="_Similarity_MortgageInsuranceCompany" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -15698,7 +15638,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       </DTS:EventHandlers>
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{0FA9F6D9-AE23-4D61-81AB-AE94DA591AB0}"
+          SQLTask:Connection="{0F892514-E4F2-47D6-BAC5-5729798F388D}"
           SQLTask:SqlStatementSource="INSERT INTO [dbo].[QL_Eleni_dulla_ETL_Log]&#xA;VALUES&#xA;(&#xA; ?&#xA;,?&#xA;,?&#xA;,?&#xA;,?&#xA;,?&#xA;,?&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
@@ -16124,17 +16064,17 @@ where [refTable].[MarketSourceCode] = ?</property>
           Id="Package\Data Flow Task_UberWriter\Fuzzy Lookup 1"
           TopLeft="85.0000014475414,361.22353292947" />
         <NodeLayout
-          Size="160.8,41.6"
-          Id="Package\Data Flow Task_UberWriter\UberWriter"
-          TopLeft="79.457144183042,0.411764459214044" />
+          Size="129.6,41.6"
+          Id="Package\Data Flow Task_UberWriter\Row Count"
+          TopLeft="480.000008174351,263.223531106269" />
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Data Flow Task_UberWriter\Derived Column 3"
           TopLeft="250.714289983925,258.470591860246" />
         <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Data Flow Task_UberWriter\Row Count"
-          TopLeft="480.000008174351,263.223531106269" />
+          Size="160.8,41.6"
+          Id="Package\Data Flow Task_UberWriter\UberWriter"
+          TopLeft="79.457144183042,0.411764459214044" />
         <NodeLayout
           Size="172,41.6"
           Id="Package\Data Flow Task_UberWriter\Lookup"
@@ -16147,110 +16087,6 @@ where [refTable].[MarketSourceCode] = ?</property>
           Size="154.4,41.6"
           Id="Package\Data Flow Task_UberWriter\Conditional Split"
           TopLeft="420.000007152558,99.4117661000947" />
-        <EdgeLayout
-          Id="Package\Data Flow Task_UberWriter.Paths[Row Count Output 1]"
-          TopLeft="544.800008174351,304.823531106269">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-384.20000672681,56.4000018232011"
-              Start="0,0"
-              End="-384.20000672681,48.9000018232011">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.2000009116005" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.2000009116005"
-                    Point2="0,28.2000009116005"
-                    Point3="-4,28.2000009116005" />
-                  <mssgle:LineSegment
-                    End="-380.20000672681,28.2000009116005" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-380.20000672681,28.2000009116005"
-                    Point2="-384.20000672681,28.2000009116005"
-                    Point3="-384.20000672681,32.2000009116005" />
-                  <mssgle:LineSegment
-                    End="-384.20000672681,48.9000018232011" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_UberWriter.Paths[Lookup Match Output]"
-          TopLeft="172,248.68235613714">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="78.7142899839249,30.5882357231059"
-              Start="0,0"
-              End="71.2142899839249,30.5882357231059">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="35.3571449919624,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="35.3571449919624,0"
-                    Point2="39.3571449919624,0"
-                    Point3="39.3571449919624,4" />
-                  <mssgle:LineSegment
-                    End="39.3571449919624,26.5882357231059" />
-                  <mssgle:CubicBezierSegment
-                    Point1="39.3571449919624,26.5882357231059"
-                    Point2="39.3571449919624,30.5882357231059"
-                    Point3="43.3571449919624,30.5882357231059" />
-                  <mssgle:LineSegment
-                    End="71.2142899839249,30.5882357231059" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8.8342417267876,-17.609375,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_UberWriter.Paths[Fuzzy Lookup Output]"
-          TopLeft="236.200001447541,382.02353292947">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="158.085719552819,22.6000009115998"
-              Start="0,0"
-              End="150.585719552819,22.6000009115998">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="75.0428597764094,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="75.0428597764094,0"
-                    Point2="79.0428597764094,0"
-                    Point3="79.0428597764094,4" />
-                  <mssgle:LineSegment
-                    End="79.0428597764094,18.6000009115998" />
-                  <mssgle:CubicBezierSegment
-                    Point1="79.0428597764094,18.6000009115998"
-                    Point2="79.0428597764094,22.6000009115998"
-                    Point3="83.0428597764094,22.6000009115998" />
-                  <mssgle:LineSegment
-                    End="150.585719552819,22.6000009115998" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_UberWriter.Paths[Derived Column Output1]"
           TopLeft="413.114289983925,281.647061483258">
@@ -16270,7 +16106,9 @@ where [refTable].[MarketSourceCode] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16304,7 +16142,9 @@ where [refTable].[MarketSourceCode] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16374,7 +16214,117 @@ where [refTable].[MarketSourceCode] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_UberWriter.Paths[Row Count Output 1]"
+          TopLeft="544.800008174351,304.823531106269">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-384.20000672681,56.4000018232011"
+              Start="0,0"
+              End="-384.20000672681,48.9000018232011">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.2000009116005" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.2000009116005"
+                    Point2="0,28.2000009116005"
+                    Point3="-4,28.2000009116005" />
+                  <mssgle:LineSegment
+                    End="-380.20000672681,28.2000009116005" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-380.20000672681,28.2000009116005"
+                    Point2="-384.20000672681,28.2000009116005"
+                    Point3="-384.20000672681,32.2000009116005" />
+                  <mssgle:LineSegment
+                    End="-384.20000672681,48.9000018232011" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_UberWriter.Paths[Lookup Match Output]"
+          TopLeft="172,248.68235613714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="78.7142899839249,30.5882357231059"
+              Start="0,0"
+              End="71.2142899839249,30.5882357231059">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="35.3571449919624,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35.3571449919624,0"
+                    Point2="39.3571449919624,0"
+                    Point3="39.3571449919624,4" />
+                  <mssgle:LineSegment
+                    End="39.3571449919624,26.5882357231059" />
+                  <mssgle:CubicBezierSegment
+                    Point1="39.3571449919624,26.5882357231059"
+                    Point2="39.3571449919624,30.5882357231059"
+                    Point3="43.3571449919624,30.5882357231059" />
+                  <mssgle:LineSegment
+                    End="71.2142899839249,30.5882357231059" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8.8342417267876,-17.609375,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_UberWriter.Paths[Fuzzy Lookup Output]"
+          TopLeft="236.200001447541,382.02353292947">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="158.085719552819,22.6000009115998"
+              Start="0,0"
+              End="150.585719552819,22.6000009115998">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="75.0428597764094,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="75.0428597764094,0"
+                    Point2="79.0428597764094,0"
+                    Point3="79.0428597764094,4" />
+                  <mssgle:LineSegment
+                    End="79.0428597764094,18.6000009115998" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79.0428597764094,18.6000009115998"
+                    Point2="79.0428597764094,22.6000009115998"
+                    Point3="83.0428597764094,22.6000009115998" />
+                  <mssgle:LineSegment
+                    End="150.585719552819,22.6000009115998" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

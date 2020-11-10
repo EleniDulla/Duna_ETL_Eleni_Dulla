@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-62UHNOD\owner"
   DTS:DTSID="{6F959282-F705-4117-9D89-AD74F511D7C1}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.123"
+  DTS:LastModifiedProductVersion="15.0.2000.132"
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Eleni_Dulla_SimpleNexus"
   DTS:PackageType="5"
-  DTS:VersionBuild="423"
-  DTS:VersionGUID="{78E7D13F-9F64-4AFC-8DBB-C9610EB03CAB}">
+  DTS:VersionBuild="426"
+  DTS:VersionGUID="{F806736E-C68E-45AC-B0BA-86976A46C774}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="DESKTOP-62UHNOD\DUNATEST.QLSSISLOG">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-62UHNOD\DUNATEST;Initial Catalog=QLSSISLOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-NIRQ9MH;Initial Catalog=QLSSISLOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -36,6 +36,16 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=DESKTOP-62UHNOD\DUNATEST;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{35612F54-BCBB-480D-9BCD-7666674A2A96}"
+      DTS:ObjectName="DESKTOP-NIRQ9MH.STGQL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-NIRQ9MH;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -144,7 +154,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">10/9/2020 1:44:48 AM</DTS:VariableValue>
+        DTS:DataType="7">11/4/2020 10:25:26 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -182,7 +192,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarFullArchivedFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFile\Archaive Folder\SimpleNexus_2020-10-09-01-44-47.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFile\Archaive Folder\SimpleNexus_2020-11-04-22-25-26.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -284,7 +294,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">10/9/2020 1:44:48 AM</DTS:VariableValue>
+        DTS:DataType="7">11/4/2020 10:25:26 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -365,7 +375,7 @@
         <DTS:Executable
           DTS:refId="Package\Foreach Loop Container\File System Task_Rename&amp;Move"
           DTS:CreationName="Microsoft.FileSystemTask"
-          DTS:Description="C:\BulkFile\Archaive Folder\SimpleNexus_2020-10-09-01-44-47.zip"
+          DTS:Description="C:\BulkFile\Archaive Folder\SimpleNexus_2020-11-04-22-25-26.zip"
           DTS:DTSID="{58C9461D-DD4A-40D5-BBF5-DEC04DBFEB53}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
@@ -10004,8 +10014,8 @@ where [refTable].[MarketSourceCode] = ?</property>
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-62UHNOD\DUNATEST.STGQL]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-62UHNOD\DUNATEST.STGQL]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -10609,14 +10619,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrFirstName]"
                           lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[BorrFirstName]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Channal]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="Channal"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Channal]" />
-                        <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CloserFirstName]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -10624,20 +10626,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                           cachedName="CloserFirstName"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
                           lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[CloserFirstName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Closer_Name]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="Closer_Name"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Closer_Name]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FundedTier]"
-                          cachedDataType="i4"
-                          cachedName="FundedTier"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[FundedTier]" />
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LeadSourceType]"
                           cachedCodepage="1252"
@@ -10675,22 +10663,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                           lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanoOfficerLastName]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProcessorFirstName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="ProcessorFirstName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[ProcessorFirstName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProcessorLastname]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="ProcessorLastname"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[ProcessorLastname]" />
-                        <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CloserLastname]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -10698,21 +10670,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                           cachedName="CloserLastname"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
                           lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[CloserLastname]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LoanOfficer]"
-                          cachedDataType="wstr"
-                          cachedLength="101"
-                          cachedName="LoanOfficer"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[LoanOfficer]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Loan_Processor_Name]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="Loan_Processor_Name"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Loan_Processor_Name]" />
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnderWriterFirstName]"
                           cachedCodepage="1252"
@@ -10722,30 +10679,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFirstName]"
                           lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[UnderWriterFirstName]" />
                         <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Underwriter_Name]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="Underwriter_Name"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Underwriter_Name]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnderWriterLastName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="UnderWriterLastName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[UnderWriterLastName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Insurance_Company]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="Insurance_Company"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
-                        <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SourceName]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -10753,14 +10686,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                           cachedName="SourceName"
                           externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
                           lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[SourceName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Derived Column 1.AnnualPercentageRate]"
-                          cachedDataType="numeric"
-                          cachedName="Derived Column 1.AnnualPercentageRate"
-                          cachedPrecision="23"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                          lineageId="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1.Outputs[Fuzzy Lookup Output].Columns[Derived Column 1.AnnualPercentageRate]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -10774,12 +10699,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                           dataType="str"
                           length="128"
                           name="AmortizationType" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                          dataType="numeric"
-                          name="AnnualPercentageRate"
-                          precision="23"
-                          scale="10" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
                           dataType="dbTimeStamp"
@@ -10816,7 +10735,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                           name="BorrAddress" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
-                          dataType="dbDate"
+                          dataType="dbTimeStamp"
                           name="BorrBirthDate" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
@@ -11030,7 +10949,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
                           codePage="1252"
                           dataType="str"
-                          length="132"
+                          length="123"
                           name="LeadId" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
@@ -11144,7 +11063,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                           dataType="numeric"
                           name="OriginationFee"
                           precision="27"
-                          scale="13" />
+                          scale="10" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
                           dataType="dbTimeStamp"
@@ -11161,9 +11080,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                           name="QAFailDate" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
+                          dataType="dbTimeStamp"
                           name="QAStatus" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TopQualificationRatios]"
@@ -11176,7 +11093,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                           dataType="numeric"
                           name="TotalFees"
                           precision="27"
-                          scale="13" />
+                          scale="10" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
                           dataType="numeric"
@@ -11191,14 +11108,10 @@ where [refTable].[MarketSourceCode] = ?</property>
                           name="UnderwriterRiskAssess" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
-                          dataType="dbTimeStamp"
-                          name="UnderwritingReceivedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
                           codePage="1252"
                           dataType="str"
-                          length="10"
-                          name="Channel" />
+                          length="128"
+                          name="UnderwritingReceivedDate" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
                           codePage="1252"
@@ -11206,21 +11119,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                           length="128"
                           name="CloserFirstName" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="CloserFullName" />
-                        <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
                           codePage="1252"
                           dataType="str"
                           length="128"
                           name="CloserLastName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
-                          dataType="i4"
-                          name="FundedTier" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadSourceType]"
                           codePage="1252"
@@ -11243,33 +11146,10 @@ where [refTable].[MarketSourceCode] = ?</property>
                           length="100"
                           name="LoanOfficerFirstName" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
-                          dataType="wstr"
-                          length="101"
-                          name="LoanOfficerFullName" />
-                        <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                           dataType="wstr"
                           length="100"
                           name="LoanOfficerLastName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="ProcessorFirstName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="ProcessorFullName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="ProcessorLastName" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
                           codePage="1252"
@@ -11283,23 +11163,92 @@ where [refTable].[MarketSourceCode] = ?</property>
                           length="128"
                           name="UnderwriterFirstName" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JSON Source (REST API or File).AnnualPercentageRate]"
+                          dataType="numeric"
+                          name="JSON Source (REST API or File).AnnualPercentageRate"
+                          precision="23"
+                          scale="10" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Closer_Name]"
                           codePage="1252"
                           dataType="str"
                           length="128"
-                          name="UnderwriterFullName" />
+                          name="Closer_Name" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Loan_Processor_Name]"
                           codePage="1252"
                           dataType="str"
                           length="128"
-                          name="UnderwriterLastName" />
+                          name="Loan_Processor_Name" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficer]"
+                          dataType="wstr"
+                          length="101"
+                          name="LoanOfficer" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Underwriter_Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="128"
+                          name="Underwriter_Name" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Derived Column.AnnualPercentageRate]"
+                          dataType="numeric"
+                          name="Derived Column.AnnualPercentageRate"
+                          precision="23"
+                          scale="10" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channal]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="Channal" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FudedTire]"
+                          dataType="i4"
+                          name="FudedTire" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderWriterLastName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="128"
+                          name="UnderWriterLastName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProssesorFirstName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="128"
+                          name="ProssesorFirstName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProssesorLastName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="128"
+                          name="ProssesorLastName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketSourceName]"
                           codePage="1252"
                           dataType="str"
                           length="100"
-                          name="InsuranceCompany" />
+                          name="MarketSourceName" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                          codePage="1252"
+                          dataType="str"
+                          length="128"
+                          name="Insurance_Company" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_Similarity]"
+                          dataType="r4"
+                          name="_Similarity" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_Confidence]"
+                          dataType="r4"
+                          name="_Confidence" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_Similarity_MortgageInsuranceCompany]"
+                          dataType="r4"
+                          name="_Similarity_MortgageInsuranceCompany" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -14149,9 +14098,9 @@ where [refTable].[MarketSourceCode] = ?</property>
           Id="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Destination"
           TopLeft="517.821441766558,354.176471993173" />
         <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Sequence Container\Data Flow Task_SimpleNexus\Row Count"
-          TopLeft="504.535728429653,252.047058383816" />
+          Size="149.6,41.6"
+          Id="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Source"
+          TopLeft="88.3928586481784,23.5147062121378" />
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1"
@@ -14161,6 +14110,10 @@ where [refTable].[MarketSourceCode] = ?</property>
           Id="Package\Sequence Container\Data Flow Task_SimpleNexus\Lookup"
           TopLeft="468.928576859891,148.058825213191" />
         <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Sequence Container\Data Flow Task_SimpleNexus\Row Count"
+          TopLeft="504.535728429653,252.047058383816" />
+        <NodeLayout
           Size="162.4,41.6"
           Id="Package\Sequence Container\Data Flow Task_SimpleNexus\Derived Column 3"
           TopLeft="39.1785719425096,254.926472676873" />
@@ -14168,90 +14121,6 @@ where [refTable].[MarketSourceCode] = ?</property>
           Size="154.4,41.6"
           Id="Package\Sequence Container\Data Flow Task_SimpleNexus\Conditional Split"
           TopLeft="503.107154166821,29.1764707169322" />
-        <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Source"
-          TopLeft="88.3928586481784,23.5147062121378" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_SimpleNexus.Paths[Derived Column Output1]"
-          TopLeft="226.328572517269,167.389707556748">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="242.600004342623,0"
-              Start="0,0"
-              End="235.100004342623,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="235.100004342623,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_SimpleNexus.Paths[Derived Column Output]"
-          TopLeft="201.57857194251,274.286765530345">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="302.957156487143,0"
-              Start="0,0"
-              End="295.457156487143,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="295.457156487143,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_SimpleNexus.Paths[BorrFirstandLastName_NotTest]"
-          TopLeft="580.307154166821,70.7764707169322">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-435.178581649552,74.3441191833728"
-              Start="0,0"
-              End="-435.178581649552,66.8441191833728">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.1720595916864" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.1720595916864"
-                    Point2="0,37.1720595916864"
-                    Point3="-4,37.1720595916864" />
-                  <mssgle:LineSegment
-                    End="-431.178581649552,37.1720595916864" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-431.178581649552,37.1720595916864"
-                    Point2="-435.178581649552,37.1720595916864"
-                    Point3="-435.178581649552,41.1720595916864" />
-                  <mssgle:LineSegment
-                    End="-435.178581649552,66.8441191833728" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-286.810677543526,42.1720595916864,138.4427734375,11.0625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task_SimpleNexus.Paths[Row Count Output 1]"
           TopLeft="569.335728429653,293.647058383816">
@@ -14366,6 +14235,86 @@ where [refTable].[MarketSourceCode] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_SimpleNexus.Paths[Derived Column Output1]"
+          TopLeft="226.328572517269,167.389707556748">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="242.600004342623,0"
+              Start="0,0"
+              End="235.100004342623,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="235.100004342623,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_SimpleNexus.Paths[Derived Column Output]"
+          TopLeft="201.57857194251,274.286765530345">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="302.957156487143,0"
+              Start="0,0"
+              End="295.457156487143,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="295.457156487143,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_SimpleNexus.Paths[BorrFirstandLastName_NotTest]"
+          TopLeft="580.307154166821,70.7764707169322">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-435.178581649552,74.3441191833728"
+              Start="0,0"
+              End="-435.178581649552,66.8441191833728">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.1720595916864" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.1720595916864"
+                    Point2="0,37.1720595916864"
+                    Point3="-4,37.1720595916864" />
+                  <mssgle:LineSegment
+                    End="-431.178581649552,37.1720595916864" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-431.178581649552,37.1720595916864"
+                    Point2="-435.178581649552,37.1720595916864"
+                    Point3="-435.178581649552,41.1720595916864" />
+                  <mssgle:LineSegment
+                    End="-435.178581649552,66.8441191833728" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-286.810677543526,42.1720595916864,138.4427734375,11.0625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -14435,6 +14384,19 @@ where [refTable].[MarketSourceCode] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Data Flow Task_SimpleNexus\Fuzzy Lookup 1">
     <Properties>
       <Property>
@@ -14467,19 +14429,6 @@ where [refTable].[MarketSourceCode] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task_SimpleNexus\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

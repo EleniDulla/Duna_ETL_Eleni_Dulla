@@ -2,38 +2,38 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Eleni_Dulla_SSIS_Packages</Name>
-    <LastWriteTime>2020-10-09T05:55:35.2904969Z</LastWriteTime>
+    <LastWriteTime>2020-11-05T03:25:11.4495248Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Eleni_Dulla_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-10-09T05:37:04.4371019Z</LastWriteTime>
+      <LastWriteTime>2020-11-05T01:44:10.1048485Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Eleni_Dulla_QuickenLoan.dtsx</Name>
-      <LastWriteTime>2020-10-09T05:39:33.369273Z</LastWriteTime>
+      <LastWriteTime>2020-11-04T20:27:25.681651Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Eleni_Dulla_simpleNexus.dtsx</Name>
-      <LastWriteTime>2020-10-09T05:43:12.7454399Z</LastWriteTime>
+      <LastWriteTime>2020-11-05T02:07:01.9853502Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Eleni_Dulla_LendingPad.dtsx</Name>
-      <LastWriteTime>2020-10-09T05:34:24.0809704Z</LastWriteTime>
+      <LastWriteTime>2020-11-05T02:04:19.4097382Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>PKg_Eleni_Dulla_Quicken_Loan_Master.dtsx</Name>
-      <LastWriteTime>2020-10-09T05:51:25.2049915Z</LastWriteTime>
+      <LastWriteTime>2020-11-05T01:53:33.2575506Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Eleni_Dulla_UberWriter.dtsx</Name>
-      <LastWriteTime>2020-10-09T05:47:28.8026184Z</LastWriteTime>
+      <LastWriteTime>2020-11-05T04:09:48.9771392Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

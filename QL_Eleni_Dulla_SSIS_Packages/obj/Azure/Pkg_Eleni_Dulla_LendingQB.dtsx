@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-62UHNOD\owner"
   DTS:DTSID="{670CAF91-BF54-4758-B721-2C27ACBF3853}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.123"
+  DTS:LastModifiedProductVersion="15.0.2000.132"
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Eleni_Dulla_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="245"
-  DTS:VersionGUID="{CD4FE267-9A50-4B54-A52D-078ACEEC3784}">
+  DTS:VersionBuild="248"
+  DTS:VersionGUID="{1654C445-54DA-4F89-BD0A-EDA4D2EDDABC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -38,6 +38,16 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=DESKTOP-62UHNOD\DUNATEST;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{31D146A7-AEF9-40D6-8500-62F9D5C82966}"
+      DTS:ObjectName="DESKTOP-NIRQ9MH.STGQL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-NIRQ9MH;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -136,7 +146,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
       <DTS:VariableValue
-        DTS:DataType="7">10/9/2020 1:38:11 AM</DTS:VariableValue>
+        DTS:DataType="7">11/4/2020 8:46:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -220,7 +230,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">10/9/2020 1:38:11 AM</DTS:VariableValue>
+        DTS:DataType="7">11/4/2020 8:46:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -24820,8 +24830,8 @@ where [refTable].[MarketSourceCode] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-62UHNOD\DUNATEST.STGQL]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-62UHNOD\DUNATEST.STGQL]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-NIRQ9MH.STGQL]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -25063,22 +25073,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[LoanOfficerLastName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProcessorLastName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="ProcessorLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[ProcessorLastName]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProcessorFirstName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="ProcessorFirstName"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[ProcessorFirstName]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnderWriterFirstName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -25086,14 +25080,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="UnderWriterFirstName"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFirstName]"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[UnderWriterFirstName]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnderWriterLastName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="UnderWriterLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[UnderWriterLastName]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CloserFirstName]"
                       cachedCodepage="1252"
@@ -25142,12 +25128,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[SourceName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FundedTier]"
-                      cachedDataType="i4"
-                      cachedName="FundedTier"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[FundedTier]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of AmortizationType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -25155,14 +25135,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="Copy of Copy of AmortizationType"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of AmortizationType]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of AnnualPercentageRate]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of AnnualPercentageRate"
-                      cachedPrecision="23"
-                      cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Copy of AnnualPercentageRate]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of AppraisedValue]"
                       cachedDataType="numeric"
@@ -25263,14 +25235,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedScale="10"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Copy of BottomQualificationRatios]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Channal]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="Channal"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Channal]" />
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of CombinedLoanToValueRatio]"
                       cachedDataType="numeric"
@@ -25389,13 +25353,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerEmail]"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Copy of LoanOfficerEmail]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of LoanOfficer]"
-                      cachedDataType="wstr"
-                      cachedLength="101"
-                      cachedName="Copy of LoanOfficer"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Copy of LoanOfficer]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of LoanProgram]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -25492,14 +25449,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OriginationFee]"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Copy of OriginationFee]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of Loan_Processor_Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Copy of Copy of Loan_Processor_Name"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of Loan_Processor_Name]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of PropertyOccupancyType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -25540,14 +25489,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Copy of TotalLoanAmt]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of Underwriter_Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Copy of Copy of Underwriter_Name"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of Underwriter_Name]" />
-                    <inputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of UnderwriterRiskAssess]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -25561,22 +25502,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedName="UnderwrittingReceivedDate"
                       externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[UnderwrittingReceivedDate]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Insurance_Company]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Insurance_Company"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Copy of Closer_Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Copy of Copy of Closer_Name"
-                      externalMetadataColumnId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[Copy of Copy of Closer_Name]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -25590,12 +25515,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="str"
                       length="128"
                       name="AmortizationType" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                      dataType="numeric"
-                      name="AnnualPercentageRate"
-                      precision="23"
-                      scale="10" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
                       dataType="dbTimeStamp"
@@ -25632,7 +25551,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="BorrAddress" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
-                      dataType="dbDate"
+                      dataType="dbTimeStamp"
                       name="BorrBirthDate" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
@@ -25691,23 +25610,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      name="Channel" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="CloserFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="CloserFullName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
                       codePage="1252"
@@ -25786,10 +25693,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
                       dataType="dbTimeStamp"
                       name="FinalDocumentDate" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
-                      dataType="i4"
-                      name="FundedTier" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
                       dataType="numeric"
@@ -25874,7 +25777,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
                       codePage="1252"
                       dataType="str"
-                      length="132"
+                      length="123"
                       name="LeadId" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
@@ -25922,11 +25825,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="wstr"
                       length="100"
                       name="LoanOfficerFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
-                      dataType="wstr"
-                      length="101"
-                      name="LoanOfficerFullName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                       dataType="wstr"
@@ -26019,29 +25917,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="numeric"
                       name="OriginationFee"
                       precision="27"
-                      scale="13" />
+                      scale="10" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
                       dataType="dbTimeStamp"
                       name="ProcessingDate" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="ProcessorFirstName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="ProcessorFullName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="ProcessorLastName" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
                       codePage="1252"
@@ -26054,9 +25934,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="QAFailDate" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
+                      dataType="dbTimeStamp"
                       name="QAStatus" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
@@ -26075,7 +25953,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="numeric"
                       name="TotalFees"
                       precision="27"
-                      scale="13" />
+                      scale="10" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
                       dataType="numeric"
@@ -26089,18 +25967,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="128"
                       name="UnderwriterFirstName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="UnderwriterFullName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="128"
-                      name="UnderwriterLastName" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
                       codePage="1252"
                       dataType="str"
@@ -26108,14 +25974,97 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="UnderwriterRiskAssess" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
-                      dataType="dbTimeStamp"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
                       name="UnderwritingReceivedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JSON Source (REST API or File).AnnualPercentageRate]"
+                      dataType="numeric"
+                      name="JSON Source (REST API or File).AnnualPercentageRate"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Closer_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Closer_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Loan_Processor_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Loan_Processor_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficer]"
+                      dataType="wstr"
+                      length="101"
+                      name="LoanOfficer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Underwriter_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Underwriter_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Derived Column.AnnualPercentageRate]"
+                      dataType="numeric"
+                      name="Derived Column.AnnualPercentageRate"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Channal]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Channal" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FudedTire]"
+                      dataType="i4"
+                      name="FudedTire" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnderWriterLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="UnderWriterLastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProssesorFirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="ProssesorFirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProssesorLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="ProssesorLastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MarketSourceName]"
                       codePage="1252"
                       dataType="str"
                       length="100"
-                      name="InsuranceCompany" />
+                      name="MarketSourceName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Insurance_Company" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_Similarity]"
+                      dataType="r4"
+                      name="_Similarity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_Confidence]"
+                      dataType="r4"
+                      name="_Confidence" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_Similarity_MortgageInsuranceCompany]"
+                      dataType="r4"
+                      name="_Similarity_MortgageInsuranceCompany" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -26774,7 +26723,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <NodeLayout
           Size="143.2,41.6"
           Id="Package\Data Flow Task_SharePoint_OData\OData Source"
-          TopLeft="109.126985985406,36.132353447919" />
+          TopLeft="109.126985985406,42.2500005925402" />
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Data Flow Task_SharePoint_OData\Derived Column 1"
@@ -26796,19 +26745,77 @@ where [refTable].[MarketSourceCode] = ?</property>
           Id="Package\Data Flow Task_SharePoint_OData\Data Conversion 1"
           TopLeft="346.612812244599,148.670489827511" />
         <EdgeLayout
-          Id="Package\Data Flow Task_SharePoint_OData.Paths[Output]"
-          TopLeft="252.326985985406,54.421405610528">
+          Id="Package\Data Flow Task_SharePoint_OData.Paths[Data Conversion Output]"
+          TopLeft="262.653969756925,165.610043497696">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="96.760321546818,0"
+              EndConnector="83.958842487674,0"
               Start="0,0"
-              End="89.260321546818,0">
+              End="76.458842487674,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="89.260321546818,0" />
+                    End="76.458842487674,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_SharePoint_OData.Paths[BorrFirstorLastName_NotTest]"
+          TopLeft="502.687307532224,51.7016562371037">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="139.594452332598,0"
+              Start="0,0"
+              End="132.094452332598,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="132.094452332598,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0.490839447549007,5,131.1127734375,10.7841796875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task_SharePoint_OData.Paths[Output]"
+          TopLeft="252.326985985406,63.0500005925402">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96.760321546818,-11.1395428194031"
+              Start="0,0"
+              End="89.260321546818,-11.1395428194031">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="44.380160773409,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.380160773409,0"
+                    Point2="48.380160773409,0"
+                    Point3="48.380160773409,-4" />
+                  <mssgle:LineSegment
+                    End="48.380160773409,-7.13954281940315" />
+                  <mssgle:CubicBezierSegment
+                    Point1="48.380160773409,-7.13954281940315"
+                    Point2="48.380160773409,-11.1395428194031"
+                    Point3="52.380160773409,-11.1395428194031" />
+                  <mssgle:LineSegment
+                    End="89.260321546818,-11.1395428194031" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -26985,52 +26992,6 @@ where [refTable].[MarketSourceCode] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_SharePoint_OData.Paths[Data Conversion Output]"
-          TopLeft="262.653969756925,165.610043497696">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="83.958842487674,0"
-              Start="0,0"
-              End="76.458842487674,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="76.458842487674,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task_SharePoint_OData.Paths[BorrFirstorLastName_NotTest]"
-          TopLeft="502.687307532224,51.7016562371037">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="139.594452332598,0"
-              Start="0,0"
-              End="132.094452332598,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="132.094452332598,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0.490839447549007,5,131.1127734375,10.7841796875"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

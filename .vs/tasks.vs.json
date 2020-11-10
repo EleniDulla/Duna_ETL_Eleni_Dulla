@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Pkg_Eleni_Dulla_LendingPad",
+      "appliesTo": "QL_Eleni_Dulla_SSIS_Packages/Pkg_Eleni_Dulla_LendingPad.dtsx",
+      "type": "launch"
+    }
+  ]
+}
